@@ -1,4 +1,4 @@
-package com.example.tppoo;
+package com.example.tppoo.Models;
 public class CaseBonus extends Case {
     final int bonusPoints = 10;
     final int bonusDeplacement = 2;

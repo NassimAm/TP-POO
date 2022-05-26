@@ -1,4 +1,4 @@
-package com.example.tppoo;
+package com.example.tppoo.Models;
 public class Definition {
     private String definition;
     private String mot;

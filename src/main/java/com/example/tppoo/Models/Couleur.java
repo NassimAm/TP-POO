@@ -1,4 +1,4 @@
-package com.example.tppoo;
+package com.example.tppoo.Models;
 public enum Couleur {
     JAUNE,
     SANSCOULEUR,

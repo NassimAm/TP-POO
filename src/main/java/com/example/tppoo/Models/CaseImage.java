@@ -1,4 +1,4 @@
-package com.example.tppoo;
+package com.example.tppoo.Models;
 public class CaseImage extends CaseQuestion {
     private Image[] images;
     private String mot;

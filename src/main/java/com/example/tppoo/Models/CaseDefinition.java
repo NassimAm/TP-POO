@@ -1,4 +1,4 @@
-package com.example.tppoo;
+package com.example.tppoo.Models;
 public class CaseDefinition extends CaseQuestion {
     private Definition definition;
     final int bonusPoints = 20;

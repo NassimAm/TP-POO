@@ -1,4 +1,4 @@
-package com.example.tppoo;
+package com.example.tppoo.Models;
 public class CaseParcours extends Case {
     CaseParcours(int numero)
     {

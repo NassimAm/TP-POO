@@ -1,4 +1,4 @@
-package com.example.tppoo;
+package com.example.tppoo.Models;
 public class Joueur {
 
     private int id;
@@ -7,6 +7,12 @@ public class Joueur {
     private int position;
     private int score;
 
+    public Joueur(String nom)
+    {
+        this.nom = nom;
+        this.position = 0;
+        this.score = 0;
+    }
     public void setPosition(int position)
     {
         this.position = position;
@@ -33,5 +39,20 @@ public class Joueur {
     //ajouter "points" au score courant
     public void ajouterPoints(int points) {
         this.score =+ points;
+    }
+
+    public String getNom()
+    {
+        return nom;
+    }
+
+    public int getId()
+    {
+        return id;
+    }
+
+    public int getMeilleurScore()
+    {
+        return meilleurScore;
     }
 }

@@ -1,4 +1,4 @@
-package com.example.tppoo;
+package com.example.tppoo.Models;
 import java.util.*;
 public class Plateau {
     public final int nbCases = 100; //le nombre total de cases dans le plateau

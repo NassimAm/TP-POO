@@ -1,4 +1,4 @@
-package com.example.tppoo;
+package com.example.tppoo.Models;
 import java.util.Random;
 
 public class CaseSaut extends Case {

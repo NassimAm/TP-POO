@@ -1,5 +1,8 @@
 package com.example.tppoo;
 
+import com.example.tppoo.Models.Dé;
+import com.example.tppoo.Models.Jeu;
+import com.example.tppoo.Models.Plateau;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -29,6 +32,8 @@ public class MainApplication extends Application {
         {
             System.out.println(plateau.cases[i].getCouleur());
         }
+
+        jeu.jouer();
         launch();
     }
 }

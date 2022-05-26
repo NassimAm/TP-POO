@@ -1,4 +1,4 @@
-package com.example.tppoo;
+package com.example.tppoo.Models;
 public abstract class Case {
 
     private Couleur couleur;
@@ -19,17 +19,17 @@ public abstract class Case {
 
     protected abstract void action(Joueur joueur);
 
-    void setCouleur(Couleur couleur)
+    public void setCouleur(Couleur couleur)
     {
         this.couleur = couleur;
     }
 
-    void setNumero(int numero)
+    public void setNumero(int numero)
     {
         this.numero = numero;
     }
 
-    Couleur getCouleur()
+    public Couleur getCouleur()
     {
         return this.couleur;
     }

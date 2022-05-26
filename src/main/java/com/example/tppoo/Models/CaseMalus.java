@@ -1,4 +1,4 @@
-package com.example.tppoo;
+package com.example.tppoo.Models;
 public class CaseMalus extends Case {
     final int malusPoints = -10;
     final int malusDeplacement = -2;
