@@ -1,5 +1,8 @@
 package com.example.tppoo.Models;
+import com.example.tppoo.MainApplication;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
+import javafx.scene.image.ImageView;
 
 import java.util.*;
 
@@ -13,6 +16,8 @@ public class Partie {
     private ArrayList<Image> images;
     private ArrayList<Definition> definitions;
     private Plateau plateau;
+    private Dé dé1;
+    private Dé dé2;
 
     public Partie(Joueur joueur, Scene scene) {
         this.joueur = joueur;
@@ -21,7 +26,24 @@ public class Partie {
         this.suspendu = false;
         this.plateau = new Plateau();
         this.plateau.genererPlateau(scene);
+        this.dé1 = new Dé();
+        this.dé2 = new Dé();
         chargerDonnees("");
+    }
+
+    public void rechargerPartie(Scene scene)
+    {
+        Label player_name = (Label) scene.lookup("#player_name_label");
+        player_name.setText(MainApplication.jeu.getJoueur_courant().getNom());
+
+        javafx.scene.image.Image image1 = new javafx.scene.image.Image(Objects.requireNonNull(MainApplication.class.getResourceAsStream("images/dice/dice" + Integer.toString(dé1.getValeur()) + ".png")));
+        ImageView dice_image1 = (ImageView) scene.lookup("#dice_image1");
+        dice_image1.setImage(image1);
+        javafx.scene.image.Image image2 = new javafx.scene.image.Image(Objects.requireNonNull(MainApplication.class.getResourceAsStream("images/dice/dice" + Integer.toString(dé2.getValeur()) + ".png")));
+        ImageView dice_image2 = (ImageView) scene.lookup("#dice_image2");
+        dice_image2.setImage(image2);
+
+        this.plateau.chargerPlateauSurScene(scene);
     }
 
     public void setEnPause(boolean enPause) {
@@ -71,5 +93,13 @@ public class Partie {
 
     public Plateau getPlateau() {
         return plateau;
+    }
+
+    public Dé getDé1() {
+        return dé1;
+    }
+
+    public Dé getDé2() {
+        return dé2;
     }
 }

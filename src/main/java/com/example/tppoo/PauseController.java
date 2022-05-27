@@ -1,6 +1,6 @@
 package com.example.tppoo;
 
-import com.example.tppoo.Models.Partie;
+import com.example.tppoo.Models.Plateau;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -8,39 +8,30 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.control.Label;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.util.Objects;
 
-public class MainMenuController {
+public class PauseController {
 
     @FXML
-    private Button continue_game_button;
+    private Button quit_button;
 
     @FXML
-    private Button leaderboards_button;
+    private Button resume_button;
 
     @FXML
-    private Button new_game_button;
+    private Button save_button;
 
     @FXML
-    private Button quit_menu_button;
-
-    @FXML
-    void continer_partie(ActionEvent event) {
-
-    }
-
-    @FXML
-    void nouvelle_partie(ActionEvent event) {
+    void continuer(ActionEvent event) {
         Stage stage = null;
         Parent newscene = null;
 
-        if(event.getSource() == new_game_button)
+        if(event.getSource() == resume_button)
         {
-            stage = (Stage) new_game_button.getScene().getWindow();
+            stage = (Stage) resume_button.getScene().getWindow();
             try {
                 newscene = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("game-view.fxml")));
             }
@@ -51,11 +42,7 @@ public class MainMenuController {
             }
 
             Scene scene = new Scene(newscene);
-            Partie partie = new Partie(MainApplication.jeu.getJoueur_courant(),scene);
-            MainApplication.jeu.ajouterPartieCourante(partie);
-
-            Label player_name = (Label) scene.lookup("#player_name_label");
-            player_name.setText(MainApplication.jeu.getJoueur_courant().getNom());
+            MainApplication.jeu.getPartie_courante().rechargerPartie(scene);
             stage.setScene(scene);
             stage.setTitle("English Game");
             stage.show();
@@ -68,7 +55,7 @@ public class MainMenuController {
     }
 
     @FXML
-    void vers_classements(ActionEvent event) {
+    void sauvegarder(ActionEvent event) {
 
     }
 

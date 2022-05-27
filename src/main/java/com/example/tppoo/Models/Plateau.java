@@ -111,6 +111,11 @@ public class Plateau {
 
         cases[nbCases-1] = new CaseFin(nbCases-1);
 
+        chargerPlateauSurScene(scene);
+    }
+
+    public void chargerPlateauSurScene(Scene scene)
+    {
         //Generer son interface ==================================================
         for(int i=0;i<this.nbCases;i++)
         {
@@ -153,6 +158,5 @@ public class Plateau {
                 }
             }
         }
-
     }
 }

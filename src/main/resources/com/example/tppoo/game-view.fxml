@@ -15,7 +15,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tppoo.GameController">
    <columnConstraints>
       <ColumnConstraints hgrow="SOMETIMES" maxWidth="800.800048828125" minWidth="10.0" percentWidth="76.0" prefWidth="793.5999755859375" />
       <ColumnConstraints hgrow="SOMETIMES" maxWidth="494.39996337890625" minWidth="10.0" percentWidth="24.0" prefWidth="206.4000244140625" />
@@ -1582,7 +1582,7 @@
                   <Insets bottom="25.0" />
                </BorderPane.margin>
                <children>
-                  <Button id="roll_button" mnemonicParsing="false" styleClass="roll-button" stylesheets="@css/style.css" text="Roll">
+                  <Button fx:id="roll_button" mnemonicParsing="false" onAction="#roll" styleClass="roll-button" stylesheets="@css/style.css" text="Roll">
                      <font>
                         <Font name="Segoe UI Semibold" size="16.0" />
                      </font>
@@ -1591,7 +1591,7 @@
                      <children>
                         <FlowPane alignment="CENTER_RIGHT" prefHeight="200.0" prefWidth="200.0">
                            <children>
-                              <ImageView id="dice_image1" fitHeight="197.0" fitWidth="101.0" pickOnBounds="true" preserveRatio="true">
+                              <ImageView id="dice_image1" fx:id="dice_image1" fitHeight="197.0" fitWidth="101.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
                                     <Image url="@images/dice/dice1.png" />
                                  </image>
@@ -1603,7 +1603,7 @@
                         </FlowPane>
                         <FlowPane alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="200.0">
                            <children>
-                              <ImageView id="dice_image2" fitHeight="170.0" fitWidth="101.0" pickOnBounds="true" preserveRatio="true">
+                              <ImageView id="dice_image2" fx:id="dice_image2" fitHeight="170.0" fitWidth="101.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
                                     <Image url="@images/dice/dice1.png" />
                                  </image>
@@ -1629,7 +1629,7 @@
                <children>
                   <HBox alignment="TOP_RIGHT">
                      <children>
-                        <Button id="pause_button" mnemonicParsing="false" prefHeight="21.0" prefWidth="27.0" styleClass="pause-button" stylesheets="@css/style.css">
+                        <Button fx:id="pause_button" mnemonicParsing="false" onAction="#pause" prefHeight="21.0" prefWidth="27.0" styleClass="pause-button" stylesheets="@css/style.css">
                            <graphic>
                               <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                                  <image>

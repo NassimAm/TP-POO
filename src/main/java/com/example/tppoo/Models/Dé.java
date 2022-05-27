@@ -3,11 +3,18 @@ import java.util.Random;
 
 public class Dé{
 
-    public final int max = 6;
+    private final int max = 6;
+    private int current = 1;
 
     public int GenererCoup() {
         Random rand = new Random();
-        return rand.nextInt(max) + 1;
+        this.current = rand.nextInt(max) + 1;
+        return current;
+    }
+
+    public int getValeur()
+    {
+        return current;
     }
 
 }
