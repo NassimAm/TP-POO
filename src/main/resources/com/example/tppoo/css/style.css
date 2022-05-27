@@ -1,0 +1,293 @@
+/*Case rouge ===================================================*/
+
+.case-rouge{
+    
+    -fx-background-insets: 0,0 0 5 0, 0 0 6 0, 0 0 7 0;
+    -fx-background-radius: 8;
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #a34313 0%, #903b12 100%),
+        #9d4024,
+        #d86e3a,
+        radial-gradient(center 50% 50%, radius 100%, #d86e3a, #c54e2c);
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+    -fx-font-weight: bold;
+    -fx-font-size: 1.1em;
+}
+
+.case-rouge:hover {
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #a34313 0%, #903b12 100%),
+        #9d4024,
+        #d86e3a,
+        radial-gradient(center 50% 50%, radius 100%, #ea7f4b, #c54e2c);
+}
+.case-rouge:pressed {
+    -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
+}
+
+/*Case verte ===================================================*/
+
+.case-verte{
+    
+    -fx-background-insets: 0,0 0 5 0, 0 0 6 0, 0 0 7 0;
+    -fx-background-radius: 8;
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #2ba313 0%, #219012 100%),
+        #409d24,
+        #54d83a,
+        radial-gradient(center 50% 50%, radius 100%, #54d83a, #57c52c);
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+    -fx-font-weight: bold;
+    -fx-font-size: 1.1em;
+}
+
+.case-verte:hover {
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #2ba313 0%, #219012 100%),
+        #409d24,
+        #54d83a,
+        radial-gradient(center 50% 50%, radius 100%, #70ea4b, #57c52c);
+}
+.case-verte:pressed {
+    -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
+}
+
+/*Case jaune ===================================================*/
+
+.case-jaune{
+    
+    -fx-background-insets: 0,0 0 5 0, 0 0 6 0, 0 0 7 0;
+    -fx-background-radius: 8;
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #a3a113 0%, #908e12 100%),
+        #9d9b24,
+        #d8cd3a,
+        radial-gradient(center 50% 50%, radius 100%, #d8cd3a, #c5c32c);
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+    -fx-font-weight: bold;
+    -fx-font-size: 1.1em;
+}
+
+.case-jaune:hover {
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%,#a3a113 0%, #908e12 100%),
+        #9d9b24,
+        #d8cd3a,
+        radial-gradient(center 50% 50%, radius 100%,#eae74b, #c5c32c);
+}
+.case-jaune:pressed {
+    -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
+}
+
+/*Case orange ===================================================*/
+
+.case-orange{
+    
+    -fx-background-insets: 0,0 0 5 0, 0 0 6 0, 0 0 7 0;
+    -fx-background-radius: 8;
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #bd7516 0%, #ad6c16 100%),
+        #b66e2b,
+        #e7903e,
+        radial-gradient(center 50% 50%, radius 100%, #e7903e, #da822f);
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+    -fx-font-weight: bold;
+    -fx-font-size: 1.1em;
+}
+
+.case-orange:hover {
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%,#bd7516 0%, #ad6c16 100%),
+        #b66e2b,
+        #e7903e,
+        radial-gradient(center 50% 50%, radius 100%,#fd9f52, #da822f);
+}
+.case-orange:pressed {
+    -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
+}
+
+/*Case bleue ===================================================*/
+
+.case-bleue{
+    
+    -fx-background-insets: 0,0 0 5 0, 0 0 6 0, 0 0 7 0;
+    -fx-background-radius: 8;
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #1329a3 0%, #121a90 100%),
+        #24369d,
+        #3a45d8,
+        radial-gradient(center 50% 50%, radius 100%, #3a45d8, #2c36c5);
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+    -fx-font-weight: bold;
+    -fx-font-size: 1.1em;
+}
+
+.case-bleue:hover {
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #1329a3 0%, #121a90 100%),
+        #24369d,
+        #3a45d8,
+        radial-gradient(center 50% 50%, radius 100%, #4b5bea, #2c36c5);
+}
+.case-bleue:pressed {
+    -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
+}
+
+/*Case rose ===================================================*/
+
+.case-rose{
+    
+    -fx-background-insets: 0,0 0 5 0, 0 0 6 0, 0 0 7 0;
+    -fx-background-radius: 8;
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #a31384 0%, #901266 100%),
+        #9d247f,
+        #d83aa9,
+        radial-gradient(center 50% 50%, radius 100%, #d83aa9, #c52c97);
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+    -fx-font-weight: bold;
+    -fx-font-size: 1.1em;
+}
+
+.case-rose:hover {
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #a31384 0%, #901266 100%),
+        #9d247f,
+        #d83aa9,
+        radial-gradient(center 50% 50%, radius 100%, #ea4bba, #c52c97);
+}
+.case-rose:pressed {
+    -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
+}
+
+/*Case standard ===================================================*/
+
+.case-standard{
+    
+    -fx-background-insets: 0,0 0 5 0, 0 0 6 0, 0 0 7 0;
+    -fx-background-radius: 8;
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #9e9e9e 0%, #858585 100%),
+        #9b9b9b,
+        #d6d6d6,
+        radial-gradient(center 50% 50%, radius 100%, #d6d6d6, #c4c4c4);
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+    -fx-font-weight: bold;
+    -fx-font-size: 1.1em;
+}
+
+.case-standard:hover {
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #9e9e9e 0%, #858585 100%),
+        #9b9b9b,
+        #d6d6d6,
+        radial-gradient(center 50% 50%, radius 100%, #ebebeb, #c4c4c4);
+}
+.case-standard:pressed {
+    -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
+}
+
+/*Case noire ===================================================*/
+
+.case-noire{
+    
+    -fx-background-insets: 0,0 0 5 0, 0 0 6 0, 0 0 7 0;
+    -fx-background-radius: 8;
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #616161 0%, #4b4b4b 100%),
+        #535353,
+        #888888,
+        radial-gradient(center 50% 50%, radius 100%, #888888, #747474);
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+    -fx-font-weight: bold;
+    -fx-font-size: 1.1em;
+}
+
+.case-noire:hover {
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #616161 0%, #4b4b4b 100%),
+        #535353,
+        #888888,
+        radial-gradient(center 50% 50%, radius 100%, #a1a1a1, #747474);
+}
+.case-noire:pressed {
+    -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
+}
+
+/*Roll Button ======================================================================*/
+
+.roll-button{
+    -fx-background-color: 
+        linear-gradient(#ffd65b, #e68400),
+        linear-gradient(#ffef84, #f2ba44),
+        linear-gradient(#ffea6a, #efaa22),
+        linear-gradient(#ffe657 0%, #f8c202 50%, #eea10b 100%),
+        linear-gradient(from 0% 0% to 15% 50%, rgba(255,255,255,0.9), rgba(255,255,255,0));
+    -fx-background-radius: 10;
+    -fx-background-insets: 0,1,2,3,0;
+    -fx-text-fill: #654b00;
+    -fx-padding: 10 20 10 20;
+}
+
+.roll-button:hover{
+    -fx-background-color: 
+        linear-gradient(#ffd65b, #ff9100),
+        linear-gradient(#ffef84, #ffc446),
+        linear-gradient(#ffea6a, #ffb624),
+        linear-gradient(#ffe657 0%, #f8c202 50%, #ffaf0e 100%),
+        linear-gradient(from 0% 0% to 15% 50%, rgba(255,255,255,0.9), rgba(255,255,255,0));
+    -fx-cursor: hand;
+}
+
+/*Pause Button ===========================================================*/
+
+.pause-button{
+    -fx-background-color:
+        linear-gradient(#949494, #686868),
+        radial-gradient(center 50% 0%, radius 200%, #8f9289 45%, #6f706e 50%);
+    -fx-background-radius: 6, 5;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+}
+
+.pause-button:hover{
+    -fx-cursor: hand;
+}
+
+.pause-button:pressed{
+    -fx-background-color:
+        linear-gradient(#949494, #686868),
+        radial-gradient(center 50% 15%, radius 200%, #8f9289 45%, #6f706e 50%);
+    -fx-background-radius: 6, 5;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+    -fx-cursor: hand;
+    -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
+}
+
+/*Pause Buttons*/
+/*Case standard ===================================================*/
+
+.pause-buttons{
+    
+    -fx-background-insets: 0,0 0 5 0, 0 0 6 0, 0 0 7 0;
+    -fx-background-radius: 8;
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #9e9e9e 0%, #858585 100%),
+        #9b9b9b,
+        #d6d6d6,
+        radial-gradient(center 50% 50%, radius 100%, #d6d6d6, #c4c4c4);
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+}
+
+.pause-buttons:hover {
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #9e9e9e 0%, #858585 100%),
+        #9b9b9b,
+        #d6d6d6,
+        radial-gradient(center 50% 50%, radius 100%, #ebebeb, #c4c4c4);
+    -fx-cursor: hand;
+}
+.pause-buttons:pressed {
+    -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
+}

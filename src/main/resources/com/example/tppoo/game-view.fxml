@@ -1,0 +1,1730 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+   <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="800.800048828125" minWidth="10.0" percentWidth="76.0" prefWidth="793.5999755859375" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="494.39996337890625" minWidth="10.0" percentWidth="24.0" prefWidth="206.4000244140625" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+   </rowConstraints>
+   <children>
+      <BorderPane prefHeight="600.0" prefWidth="746.0" style="-fx-background-color: #DDDDDD;">
+         <center>
+            <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="761.0" BorderPane.alignment="CENTER">
+               <children>
+                  <FlowPane id="plateau" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="762.0" style="-fx-background-color: #DDDDDD;">
+                     <children>
+                        <Button id="case15" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case14" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case13" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case12" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case11" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case10" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case9" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case8" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case7" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case6" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case5" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case4" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case3" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case2" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case1" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case0" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case16" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case0" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case0" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case0" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case0" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case0" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case0" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case0" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case0" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case0" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case0" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case0" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case0" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case0" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case0" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case0" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case17" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case0" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case61" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case60" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case59" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case58" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case57" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case56" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case55" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case54" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case53" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case52" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case51" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case50" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case49" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case0" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case18" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case0" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case62" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case0" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case0" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case0" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case0" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case0" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case0" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case0" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case0" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case0" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case0" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case0" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case48" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case0" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case19" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case0" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case63" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case0" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case91" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case90" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case89" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case88" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case87" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case86" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case85" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case84" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case83" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case0" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case47" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case0" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case20" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case0" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case64" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case0" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case92" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case0" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case0" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case0" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case0" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case0" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case0" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case0" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case82" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case0" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case46" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case0" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case21" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case0" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case65" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case0" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case93" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case0" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case0" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case0" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case99" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case0" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case0" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case0" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case81" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case0" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case45" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case0" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case22" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case0" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case66" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case0" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case94" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case95" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case96" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case97" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case98" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case0" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case0" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case0" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case80" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case0" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case44" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case0" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case23" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case0" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case67" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case0" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case0" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case0" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case0" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case0" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case0" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case0" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case0" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case0" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case79" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case0" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case43" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case0" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case24" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case0" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case68" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case69" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case70" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case71" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case72" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case73" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case74" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case75" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case76" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case77" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case78" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case0" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case42" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case0" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case25" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case0" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case0" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case0" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case0" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case0" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case0" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case0" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case0" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case0" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case0" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case0" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case0" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case0" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case41" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case0" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case26" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case27" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case28" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case29" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case30" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case31" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case32" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case33" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case34" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case35" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case36" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case37" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case38" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case39" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case40" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                        <Button id="case0" mnemonicParsing="false" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <FlowPane.margin>
+                              <Insets top="1.0" />
+                           </FlowPane.margin>
+                        </Button>
+                     </children>
+                     <padding>
+                        <Insets bottom="60.0" left="60.0" right="60.0" top="60.0" />
+                     </padding>
+                  </FlowPane>
+               </children>
+            </Pane>
+         </center>
+      </BorderPane>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #CCCCCC;" GridPane.columnIndex="1">
+         <bottom>
+            <VBox alignment="CENTER" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets bottom="25.0" />
+               </BorderPane.margin>
+               <children>
+                  <Button id="roll_button" mnemonicParsing="false" styleClass="roll-button" stylesheets="@css/style.css" text="Roll">
+                     <font>
+                        <Font name="Segoe UI Semibold" size="16.0" />
+                     </font>
+                  </Button>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <FlowPane alignment="CENTER_RIGHT" prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <ImageView id="dice_image1" fitHeight="197.0" fitWidth="101.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/dice/dice1.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="5.0" top="10.0" />
+                           </padding>
+                        </FlowPane>
+                        <FlowPane alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <ImageView id="dice_image2" fitHeight="170.0" fitWidth="101.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/dice/dice1.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <padding>
+                              <Insets bottom="10.0" left="5.0" right="10.0" top="10.0" />
+                           </padding>
+                        </FlowPane>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </bottom>
+         <top>
+            <VBox alignment="CENTER" style="-fx-background-color: #EEEEEE;" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+               <children>
+                  <HBox alignment="TOP_RIGHT">
+                     <children>
+                        <Button id="pause_button" mnemonicParsing="false" prefHeight="21.0" prefWidth="27.0" styleClass="pause-button" stylesheets="@css/style.css">
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/pause_button.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/avatar.png" />
+                     </image>
+                  </ImageView>
+                  <Label id="player_name_label" text="Player Name">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Segoe UI Semibold" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </VBox>
+         </top>
+         <center>
+            <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #EEEEEE; -fx-background-radius: 10;">
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                     </VBox.margin>
+                     <children>
+                        <Label text="Score    ">
+                           <font>
+                              <Font name="Segoe UI Semibold" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <FlowPane alignment="CENTER" columnHalignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="40.0" prefWidth="44.0" style="-fx-background-color: #DDDDDD; -fx-background-radius: 15;">
+                           <children>
+                              <Label id="score_label" text="0">
+                                 <font>
+                                    <Font name="Segoe UI Semibold" size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets bottom="10.0" top="10.0" />
+                           </HBox.margin>
+                        </FlowPane>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #EEEEEE; -fx-background-radius: 10;">
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                     </VBox.margin>
+                     <children>
+                        <Label text="Position">
+                           <font>
+                              <Font name="Segoe UI Semibold" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <FlowPane alignment="CENTER" columnHalignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="40.0" prefWidth="44.0" style="-fx-background-color: #DDDDDD; -fx-background-radius: 15;">
+                           <children>
+                              <Label id="position_label" text="0">
+                                 <font>
+                                    <Font name="Segoe UI Semibold" size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets bottom="10.0" top="10.0" />
+                           </HBox.margin>
+                        </FlowPane>
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </VBox>
+         </center>
+      </BorderPane>
+   </children>
+</GridPane>

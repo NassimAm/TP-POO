@@ -6,34 +6,44 @@ import com.example.tppoo.Models.Plateau;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.control.ButtonBar;
+import javafx.scene.layout.FlowPane;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 
 public class MainApplication extends Application {
+    public static Jeu jeu;
     @Override
-    public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(MainApplication.class.getResource("main-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 320, 240);
-        stage.setTitle("Hello!");
+    public void start(Stage stage){
+        FXMLLoader fxmlLoader = new FXMLLoader(MainApplication.class.getResource("login-view.fxml"));
+        Scene scene = null;
+        try
+        {
+            scene = new Scene(fxmlLoader.load());
+        }
+        catch(IOException e)
+        {
+            e.printStackTrace();
+            System.out.println("Couldn't load FXML file");
+        }
+
+
+        jeu = new Jeu();
+        Dé dé1 = new Dé();
+        Dé dé2 = new Dé();
+
+        Plateau plateau = new Plateau();
+        //plateau.genererPlateau(scene);
+
+
+        //jeu.jouer();
+        stage.setTitle("Login");
         stage.setScene(scene);
         stage.show();
     }
 
     public static void main(String[] args) {
-        Jeu jeu = new Jeu();
-        Dé dé1 = new Dé();
-        Dé dé2 = new Dé();
-
-        Plateau plateau = new Plateau();
-        plateau.genererPlateau();
-
-        for(int i=0;i<plateau.nbCases;i++)
-        {
-            System.out.println(plateau.cases[i].getCouleur());
-        }
-
-        jeu.jouer();
         launch();
     }
 }

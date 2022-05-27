@@ -5,30 +5,12 @@ public class Jeu {
 
     public ArrayList<Joueur>joueurs = new ArrayList<Joueur>(); //une liste des joueurs
     public ArrayList<Partie> parties = new ArrayList<Partie>(); //une liste des parties
+    private Joueur joueur_courant;
+    private  Partie partie_courante;
 
     //commencer le jeu
     public void jouer() {
-        chargerJoueurs("Joueurs.txt");
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Entrez votre nom : ");
-        String nom = sc.nextLine();
-        if(identifierJoueur(nom))
-        {
-            System.out.println(nom + " a ete indentifie avec succes");
-        }
-        else
-        {
-            System.out.println(nom + " est un nouveau joueur");
-            this.joueurs.add(new Joueur(nom));
-            try {
-                FileWriter myWriter = new FileWriter("Joueurs.txt");
-                myWriter.write(nom);
-                myWriter.close();
-            } catch (IOException e) {
-                System.out.println("An error occurred While Writing in PLayers File.");
-                e.printStackTrace();
-            }
-        }
+
     }
 
     public void chargerJoueurs(String filename)
@@ -38,7 +20,6 @@ public class Jeu {
             Scanner myReader = new Scanner(myObj);
             while (myReader.hasNextLine()) {
                 String data = myReader.nextLine();
-                System.out.println(data);
                 this.joueurs.add(new Joueur(data));
             }
             myReader.close();
@@ -52,16 +33,36 @@ public class Jeu {
     public boolean identifierJoueur(String nom)
     {
         boolean resultat = false;
-        for(int i=0;i<joueurs.size();i++)
-        {
-            System.out.println(joueurs.get(i).getNom());
-            if(joueurs.get(i).getNom() == nom)
-            {
+        for (Joueur joueur : joueurs) {
+            if (Objects.equals(joueur.getNom(), nom)) {
                 resultat = true;
                 break;
             }
         }
         return resultat;
+    }
+
+    public void enregistrerJoueur(String nom)
+    {
+        chargerJoueurs("Joueurs.txt");
+        if(identifierJoueur(nom))
+        {
+            System.out.println(nom + " a ete indentifie avec succes");
+        }
+        else
+        {
+            System.out.println(nom + " est un nouveau joueur");
+            this.joueurs.add(new Joueur(nom));
+            try {
+                FileWriter myWriter = new FileWriter("Joueurs.txt",true);
+                myWriter.write(nom+"\n");
+                myWriter.close();
+            } catch (IOException e) {
+                System.out.println("An error occurred While Writing in Players File.");
+                e.printStackTrace();
+            }
+        }
+        this.joueur_courant = new Joueur(nom);
     }
 
     //afficher le meilleur score d'un joueur
@@ -87,4 +88,20 @@ public class Jeu {
 
     public void quitter(){}
 
+    public void setJoueur_courant(Joueur joueur_courant) {
+        this.joueur_courant = joueur_courant;
+    }
+
+    public void ajouterPartieCourante(Partie partie_courante) {
+        this.partie_courante = partie_courante;
+        this.parties.add(partie_courante);
+    }
+
+    public Joueur getJoueur_courant() {
+        return joueur_courant;
+    }
+
+    public Partie getPartie_courante() {
+        return partie_courante;
+    }
 }
