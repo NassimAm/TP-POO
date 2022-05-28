@@ -24,7 +24,7 @@
                         </Label>
                     </children>
                 </HBox>
-                <Label text="Statitics">
+                <Label text="Statistics">
                     <font>
                         <Font name="Yu Gothic Regular" size="20.0" />
                     </font>
