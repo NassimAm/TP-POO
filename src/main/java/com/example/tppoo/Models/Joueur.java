@@ -3,7 +3,7 @@ public class Joueur {
 
     private int id;
     private String nom;
-    private int meilleurScore;
+    private int meilleurScore = 0;
     private int position = 0;
     private int score;
     private int case_clique = 0;
@@ -18,6 +18,10 @@ public class Joueur {
     public void setPosition(int position)
     {
         this.position = position;
+    }
+
+    public void setMeilleurScore(int meilleurScore) {
+        this.meilleurScore = meilleurScore;
     }
 
     //Deplacer le joueur sur le plateau
@@ -56,7 +60,11 @@ public class Joueur {
 
     public int getMeilleurScore()
     {
-        return meilleurScore;
+        if(score > meilleurScore)
+        {
+            meilleurScore = score;
+        }
+        return this.meilleurScore;
     }
 
     public int getPosition() {
@@ -73,5 +81,13 @@ public class Joueur {
 
     public boolean getA_clique() {
         return a_clique;
+    }
+
+    public void reset()
+    {
+        this.position = 0;
+        this.score = 0;
+        this.case_clique = 0;
+        this.a_clique = false;
     }
 }

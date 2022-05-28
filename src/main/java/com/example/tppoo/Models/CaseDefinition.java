@@ -18,7 +18,9 @@ import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Objects;
+import java.util.Random;
 
 public class CaseDefinition extends CaseQuestion {
     private Definition definition;
@@ -34,6 +36,7 @@ public class CaseDefinition extends CaseQuestion {
     }
 
     public void CreerFenetre(){
+        GenererQuestion();
         Stage stage = new Stage();
         FXMLLoader fxmlLoader = new FXMLLoader(MainApplication.class.getResource("definition-view.fxml"));
         Scene scene = null;
@@ -98,6 +101,12 @@ public class CaseDefinition extends CaseQuestion {
 
         stage.show();
     };
+
+    public void GenererQuestion(){
+        Random rand = new Random();
+        ArrayList<Definition> definitions = MainApplication.jeu.getPartie_courante().getDefinitions();
+        this.definition = definitions.get(rand.nextInt(definitions.size()));
+    }
 
     public void verifierReponse(String reponse,Joueur joueur)
     {

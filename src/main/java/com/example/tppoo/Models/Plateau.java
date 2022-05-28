@@ -32,23 +32,9 @@ public class Plateau {
                 }
             }
 
-            ArrayList<Image> copyimages = new ArrayList<Image>(images);
-            Image[] caseimages = new Image[4];
-
-            int images_index = 0;
-            if(copyimages.size()>=4)
+            if(images.size()>=4)
             {
-                for(int j=0;j<4;j++)
-                {
-                    Random rand = new Random();
-                    images_index = rand.nextInt(copyimages.size());
-                    caseimages[j] = copyimages.get(images_index);
-                    copyimages.remove(images_index);
-                }
-
-                Random rand = new Random();
-                images_index = rand.nextInt(caseimages.length);
-                cases[position] = new CaseImage(position,caseimages[images_index].getMot(),caseimages);
+                cases[position] = new CaseImage(position,"",null);
             }
             else {
                 cases[position] = new CaseParcours(position);
@@ -103,8 +89,7 @@ public class Plateau {
                 }
             }
 
-            Random rand = new Random();
-            cases[position] = new CaseDefinition(position,definitions.get(rand.nextInt(definitions.size())));
+            cases[position] = new CaseDefinition(position,null);
             
         }
         //Case Saut
@@ -218,32 +203,7 @@ public class Plateau {
             this.cases[i] = new CaseParcours(i);
         }
 
-        ArrayList<Image> copyimages = new ArrayList<Image>(images);
-        Image[] caseimages = new Image[4];
-
-        int images_index = 0;
-        if(copyimages.size()>=4)
-        {
-            for(int j=0;j<4;j++)
-            {
-                Random rand = new Random();
-                images_index = rand.nextInt(copyimages.size());
-                caseimages[j] = copyimages.get(images_index);
-                copyimages.remove(images_index);
-            }
-
-            Random rand = new Random();
-            images_index = rand.nextInt(caseimages.length);
-            cases[4] = new CaseImage(4,caseimages[images_index].getMot(),caseimages);
-        }
-        else {
-            cases[4] = new CaseParcours(4);
-        }
-
-        Random rand = new Random();
-
-        this.cases[8] = new CaseDefinition(8,definitions.get(rand.nextInt(definitions.size())));
-        this.cases[12] = new CaseSaut(12);
+        this.cases[4] = new CaseFin(4);
 
         chargerPlateauSurScene(0,scene);
     }

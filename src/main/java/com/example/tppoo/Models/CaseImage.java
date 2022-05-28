@@ -19,7 +19,10 @@ import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.lang.reflect.Array;
+import java.util.ArrayList;
 import java.util.Objects;
+import java.util.Random;
 
 public class CaseImage extends CaseQuestion {
     private Image[] images;
@@ -37,6 +40,7 @@ public class CaseImage extends CaseQuestion {
     }
 
     public void CreerFenetre(){
+        GenererQuestion();
         Stage stage = new Stage();
         FXMLLoader fxmlLoader = new FXMLLoader(MainApplication.class.getResource("image-view.fxml"));
         Scene scene = null;
@@ -80,6 +84,29 @@ public class CaseImage extends CaseQuestion {
 
         stage.show();
     };
+
+    public void GenererQuestion(){
+        ArrayList<Image> images = MainApplication.jeu.getPartie_courante().getImages();
+        ArrayList<Image> copyimages = new ArrayList<Image>(images);
+        Image[] caseimages = new Image[4];
+
+        int images_index = 0;
+        if(copyimages.size()>=4)
+        {
+            for(int j=0;j<4;j++)
+            {
+                Random rand = new Random();
+                images_index = rand.nextInt(copyimages.size());
+                caseimages[j] = copyimages.get(images_index);
+                copyimages.remove(images_index);
+            }
+
+            Random rand = new Random();
+            images_index = rand.nextInt(caseimages.length);
+            this.mot = caseimages[images_index].getMot();
+            this.images = caseimages;
+        }
+    }
 
     public void verifierReponse(int index,Joueur joueur)
     {
