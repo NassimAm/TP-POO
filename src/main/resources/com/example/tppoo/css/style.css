@@ -214,6 +214,202 @@
     -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
 }
 
+/*Case rouge Joueur===================================================*/
+
+.case-rouge-joueur{
+    
+    -fx-background-insets: 0,0 0 5 0, 0 0 6 0, 0 0 7 0;
+    -fx-background-radius: 8;
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #a34313 0%, #903b12 100%),
+        #9d4024,
+        #d86e3a,
+        radial-gradient(center 50% 50%, radius 40%, #000000, #c54e2c);
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+    -fx-font-weight: bold;
+    -fx-font-size: 1.1em;
+}
+
+.case-rouge-joueur:hover {
+    -fx-cursor: hand;
+}
+.case-rouge-joueur:pressed {
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #a34313 0%, #903b12 100%),
+        #9d4024,
+        #d86e3a,
+        radial-gradient(center 50% 50%, radius 50%, #000000, #c54e2c);
+    -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
+}
+
+/*Case verte Joueur===================================================*/
+
+.case-verte-joueur{
+    
+    -fx-background-insets: 0,0 0 5 0, 0 0 6 0, 0 0 7 0;
+    -fx-background-radius: 8;
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #2ba313 0%, #219012 100%),
+        #409d24,
+        #54d83a,
+        radial-gradient(center 50% 50%, radius 40%, #000000, #57c52c);
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+    -fx-font-weight: bold;
+    -fx-font-size: 1.1em;
+}
+
+.case-verte-joueur:hover {
+    -fx-cursor: hand;
+}
+.case-verte-joueur:pressed {
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #2ba313 0%, #219012 100%),
+        #409d24,
+        #54d83a,
+        radial-gradient(center 50% 50%, radius 50%, #000000, #57c52c);
+    -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
+}
+
+/*Case jaune Joueur===================================================*/
+
+.case-jaune-joueur{
+    
+    -fx-background-insets: 0,0 0 5 0, 0 0 6 0, 0 0 7 0;
+    -fx-background-radius: 8;
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #a3a113 0%, #908e12 100%),
+        #9d9b24,
+        #d8cd3a,
+        radial-gradient(center 50% 50%, radius 40%, #000000, #c5c32c);
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+    -fx-font-weight: bold;
+    -fx-font-size: 1.1em;
+}
+
+.case-jaune-joueur:hover {
+    -fx-cursor: hand;
+}
+.case-jaune-joueur:pressed {
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%,#a3a113 0%, #908e12 100%),
+        #9d9b24,
+        #d8cd3a,
+        radial-gradient(center 50% 50%, radius 50%,#000000, #c5c32c);
+    -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
+}
+
+/*Case orange Joueur===================================================*/
+
+.case-orange-joueur{
+    
+    -fx-background-insets: 0,0 0 5 0, 0 0 6 0, 0 0 7 0;
+    -fx-background-radius: 8;
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #bd7516 0%, #ad6c16 100%),
+        #b66e2b,
+        #e7903e,
+        radial-gradient(center 50% 50%, radius 40%, #000000, #da822f);
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+    -fx-font-weight: bold;
+    -fx-font-size: 1.1em;
+}
+
+.case-orange-joueur:hover {
+    -fx-cursor: hand;
+}
+.case-orange-joueur:pressed {
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%,#bd7516 0%, #ad6c16 100%),
+        #b66e2b,
+        #e7903e,
+        radial-gradient(center 50% 50%, radius 50%,#000000, #da822f);
+    -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
+}
+
+/*Case bleue Joueur===================================================*/
+
+.case-bleue-joueur{
+    
+    -fx-background-insets: 0,0 0 5 0, 0 0 6 0, 0 0 7 0;
+    -fx-background-radius: 8;
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #1329a3 0%, #121a90 100%),
+        #24369d,
+        #3a45d8,
+        radial-gradient(center 50% 50%, radius 40%, #000000, #2c36c5);
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+    -fx-font-weight: bold;
+    -fx-font-size: 1.1em;
+}
+
+.case-bleue-joueur:hover {
+    -fx-cursor: hand;
+}
+.case-bleue-joueur:pressed {
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #1329a3 0%, #121a90 100%),
+        #24369d,
+        #3a45d8,
+        radial-gradient(center 50% 50%, radius 50%, #000000, #2c36c5);
+    -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
+}
+
+/*Case rose Joueur===================================================*/
+
+.case-rose-joueur{
+    
+    -fx-background-insets: 0,0 0 5 0, 0 0 6 0, 0 0 7 0;
+    -fx-background-radius: 8;
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #a31384 0%, #901266 100%),
+        #9d247f,
+        #d83aa9,
+        radial-gradient(center 50% 50%, radius 40%, #000000, #c52c97);
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+    -fx-font-weight: bold;
+    -fx-font-size: 1.1em;
+}
+
+.case-rose-joueur:hover {
+    -fx-cursor: hand;
+}
+.case-rose-joueur:pressed {
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #a31384 0%, #901266 100%),
+        #9d247f,
+        #d83aa9,
+        radial-gradient(center 50% 50%, radius 50%, #000000, #c52c97);
+    -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
+}
+
+/*Case standard Joueur===================================================*/
+
+.case-standard-joueur{
+    
+    -fx-background-insets: 0,0 0 5 0, 0 0 6 0, 0 0 7 0;
+    -fx-background-radius: 8;
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #9e9e9e 0%, #858585 100%),
+        #9b9b9b,
+        #d6d6d6,
+        radial-gradient(center 50% 50%, radius 40%, #000000, #c4c4c4);
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+    -fx-font-weight: bold;
+    -fx-font-size: 1.1em;
+}
+
+.case-standard-joueur:hover {
+    -fx-cursor: hand;
+}
+.case-standard-joueur:pressed {
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #9e9e9e 0%, #858585 100%),
+        #9b9b9b,
+        #d6d6d6,
+        radial-gradient(center 50% 50%, radius 50%, #000000, #c4c4c4);
+    -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
+}
+
 /*Roll Button ======================================================================*/
 
 .roll-button{

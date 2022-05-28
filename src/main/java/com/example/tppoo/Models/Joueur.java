@@ -4,8 +4,10 @@ public class Joueur {
     private int id;
     private String nom;
     private int meilleurScore;
-    private int position;
+    private int position = 0;
     private int score;
+    private int case_clique = 0;
+    private boolean a_clique = false;
 
     public Joueur(String nom)
     {
@@ -20,7 +22,7 @@ public class Joueur {
 
     //Deplacer le joueur sur le plateau
     public void deplacer(int dp) {
-        this.position =+ dp;
+        this.position += dp;
     }
 
     //generer le lancer des deux des
@@ -32,13 +34,14 @@ public class Joueur {
     }
 
     //retourner le numero de case cliquée
-    public int cliquerCase() {
-        return 0;
+    public void cliquerCase(int numero) {
+        case_clique = numero;
+        a_clique = true;
     }
 
     //ajouter "points" au score courant
     public void ajouterPoints(int points) {
-        this.score =+ points;
+        this.score += points;
     }
 
     public String getNom()
@@ -54,5 +57,21 @@ public class Joueur {
     public int getMeilleurScore()
     {
         return meilleurScore;
+    }
+
+    public int getPosition() {
+        return position;
+    }
+
+    public int getScore() {
+        return score;
+    }
+
+    public int getCase_clique() {
+        return case_clique;
+    }
+
+    public boolean getA_clique() {
+        return a_clique;
     }
 }

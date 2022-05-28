@@ -51,7 +51,7 @@ public class MainMenuController {
             }
 
             Scene scene = new Scene(newscene);
-            Partie partie = new Partie(MainApplication.jeu.getJoueur_courant(),scene);
+            Partie partie = new Partie(scene);
             MainApplication.jeu.ajouterPartieCourante(partie);
 
             Label player_name = (Label) scene.lookup("#player_name_label");

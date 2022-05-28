@@ -4,7 +4,7 @@ import javafx.scene.Scene;
 import java.util.*;
 public class Plateau {
     public final int nbCases = 100; //le nombre total de cases dans le plateau
-    public Case cases[] = new Case[nbCases];
+    private Case cases[] = new Case[nbCases];
 
     public void genererPlateau(Scene scene)
     {
@@ -111,10 +111,10 @@ public class Plateau {
 
         cases[nbCases-1] = new CaseFin(nbCases-1);
 
-        chargerPlateauSurScene(scene);
+        chargerPlateauSurScene(0,scene);
     }
 
-    public void chargerPlateauSurScene(Scene scene)
+    public void chargerPlateauSurScene(int position_joueur,Scene scene)
     {
         //Generer son interface ==================================================
         for(int i=0;i<this.nbCases;i++)
@@ -122,41 +122,74 @@ public class Plateau {
             var button = scene.lookup("#case"+Integer.toString(i));
             //System.out.println(plateau.cases[i].getCouleur());
             button.getStyleClass().clear();
-            switch(this.cases[i].getCouleur()) {
-                case JAUNE: {
-                    button.getStyleClass().add("case-jaune");
-                    break;
-                }
-                case VERTE: {
-                    button.getStyleClass().add("case-verte");
-                    break;
-                }
-                case ROUGE: {
-                    button.getStyleClass().add("case-rouge");
-                    break;
-                }
-                case ORANGE: {
-                    button.getStyleClass().add("case-orange");
-                    break;
-                }
-                case BLEU: {
-                    button.getStyleClass().add("case-bleue");
-                    break;
-                }
-                case ROSE: {
-                    button.getStyleClass().add("case-rose");
-                    break;
-                }
-                case NOIR: {
-                    button.getStyleClass().add("case-noire");
-                    break;
-                }
-                default:
-                {
-                    button.getStyleClass().add("case-standard");
-                    break;
-                }
+            if(i == position_joueur)
+                button.getStyleClass().add(getJoueurClassNameFromCouleur(this.cases[i].getCouleur()));
+            else
+                button.getStyleClass().add(getClassNameFromCouleur(this.cases[i].getCouleur()));
+        }
+    }
+
+    public String getClassNameFromCouleur(Couleur couleur)
+    {
+        switch(couleur) {
+            case JAUNE: {
+                return "case-jaune";
+            }
+            case VERTE: {
+                return "case-verte";
+            }
+            case ROUGE: {
+                return "case-rouge";
+            }
+            case ORANGE: {
+                return "case-orange";
+            }
+            case BLEU: {
+                return "case-bleue";
+            }
+            case ROSE: {
+                return "case-rose";
+            }
+            case NOIR: {
+                return "case-noire";
+            }
+            default: {
+                return "case-standard";
             }
         }
+    }
+
+    public String getJoueurClassNameFromCouleur(Couleur couleur)
+    {
+        switch(couleur) {
+            case JAUNE: {
+                return "case-jaune-joueur";
+            }
+            case VERTE: {
+                return "case-verte-joueur";
+            }
+            case ROUGE: {
+                return "case-rouge-joueur";
+            }
+            case ORANGE: {
+                return "case-orange-joueur";
+            }
+            case BLEU: {
+                return "case-bleue-joueur";
+            }
+            case ROSE: {
+                return "case-rose-joueur";
+            }
+            case NOIR: {
+                return "case-noire";
+            }
+            default: {
+                return "case-standard-joueur";
+            }
+        }
+    }
+
+    public Case[] getCases() {
+        return cases;
     }
 }

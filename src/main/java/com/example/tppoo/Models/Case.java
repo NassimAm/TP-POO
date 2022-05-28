@@ -17,7 +17,7 @@ public abstract class Case {
         joueur.setPosition(position);
     }
 
-    protected abstract void action(Joueur joueur);
+    public abstract void action(Joueur joueur);
 
     public void setCouleur(Couleur couleur)
     {

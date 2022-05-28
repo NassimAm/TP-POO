@@ -42,7 +42,7 @@ public class PauseController {
             }
 
             Scene scene = new Scene(newscene);
-            MainApplication.jeu.getPartie_courante().rechargerPartie(scene);
+            MainApplication.jeu.getPartie_courante().rechargerPartie(MainApplication.jeu.getJoueur_courant().getPosition(),scene);
             stage.setScene(scene);
             stage.setTitle("English Game");
             stage.show();

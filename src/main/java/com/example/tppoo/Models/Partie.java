@@ -7,8 +7,6 @@ import javafx.scene.image.ImageView;
 import java.util.*;
 
 public class Partie {
-
-    private Joueur joueur;
     private boolean enCours;
     private boolean suspendu;
     private boolean enPause;
@@ -19,8 +17,7 @@ public class Partie {
     private Dé dé1;
     private Dé dé2;
 
-    public Partie(Joueur joueur, Scene scene) {
-        this.joueur = joueur;
+    public Partie(Scene scene) {
         this.enCours = true;
         this.enPause = false;
         this.suspendu = false;
@@ -31,10 +28,16 @@ public class Partie {
         chargerDonnees("");
     }
 
-    public void rechargerPartie(Scene scene)
+    public void rechargerPartie(int joueur_position,Scene scene)
     {
         Label player_name = (Label) scene.lookup("#player_name_label");
         player_name.setText(MainApplication.jeu.getJoueur_courant().getNom());
+
+        Label score_label = (Label) scene.lookup("#score_label");
+        score_label.setText(Integer.toString(MainApplication.jeu.getJoueur_courant().getScore()));
+
+        Label position_label = (Label) scene.lookup("#position_label");
+        position_label.setText(Integer.toString(MainApplication.jeu.getJoueur_courant().getPosition()));
 
         javafx.scene.image.Image image1 = new javafx.scene.image.Image(Objects.requireNonNull(MainApplication.class.getResourceAsStream("images/dice/dice" + Integer.toString(dé1.getValeur()) + ".png")));
         ImageView dice_image1 = (ImageView) scene.lookup("#dice_image1");
@@ -43,7 +46,24 @@ public class Partie {
         ImageView dice_image2 = (ImageView) scene.lookup("#dice_image2");
         dice_image2.setImage(image2);
 
-        this.plateau.chargerPlateauSurScene(scene);
+        this.plateau.chargerPlateauSurScene(joueur_position, scene);
+    }
+
+    public int traiterPosition(int joueur_position,boolean a_clique,int numero_clique,Scene scene) throws DestinationException
+    {
+        boolean auto = false;
+        if(joueur_position>=100)
+        {
+            joueur_position = 99 - (joueur_position-99);
+            auto = true;
+        }
+
+        var button = scene.lookup("#case"+Integer.toString(joueur_position));
+        button.getStyleClass().clear();
+        button.getStyleClass().add(this.plateau.getJoueurClassNameFromCouleur(this.plateau.getCases()[joueur_position].getCouleur()));
+
+
+        return joueur_position;
     }
 
     public void setEnPause(boolean enPause) {
@@ -61,10 +81,6 @@ public class Partie {
     //placer les cases sur le plateau
     public void setPlateau(Plateau plateau) {
         this.plateau = plateau;
-    }
-
-    public Joueur getJoueur() {
-        return joueur;
     }
 
     public boolean isEnCours() {
