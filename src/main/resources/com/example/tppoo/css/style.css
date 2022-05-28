@@ -487,3 +487,10 @@
 .pause-buttons:pressed {
     -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
 }
+
+/*Image Buttons =====================================================================*/
+.image-button:hover{
+    -fx-cursor: hand;
+    -fx-background-color: #eeeeee65;
+    -fx-background-radius: 15;
+}

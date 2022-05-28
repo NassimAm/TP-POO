@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tppoo.ImageController">
+    <center>
+        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #BBBBBB;" BorderPane.alignment="CENTER">
+            <children>
+                <HBox alignment="CENTER" maxWidth="-Infinity" prefHeight="80.0" prefWidth="550.0" style="-fx-border-color: #FFFFFF; -fx-border-width: 5; -fx-border-style: hidden hidden solid hidden;">
+                    <VBox.margin>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="10.0" />
+                    </VBox.margin>
+                    <children>
+                        <Label text="Image Question" textFill="WHITE">
+                            <font>
+                                <Font name="Yu Gothic Bold" size="45.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </HBox>
+                <Label text="Choose the image that fits the word">
+                    <font>
+                        <Font name="Yu Gothic Regular" size="20.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets />
+                    </VBox.margin>
+                </Label>
+                <HBox alignment="CENTER" maxWidth="550.0" style="-fx-background-color: #EEEEEE; -fx-background-radius: 15;">
+                    <children>
+                        <Label id="word_label" fx:id="word_label" text="The Word" textAlignment="CENTER" wrapText="true">
+                            <font>
+                                <Font name="Yu Gothic Bold" size="20.0" />
+                            </font>
+                        </Label>
+                    </children>
+                    <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </padding>
+                    <VBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                    </VBox.margin>
+                </HBox>
+            <FlowPane hgap="10.0" maxWidth="447.0" prefHeight="200.0" prefWidth="200.0" vgap="10.0">
+               <children>
+                  <FlowPane id="image_container0" fx:id="image_container0" alignment="CENTER" columnHalignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#click0" prefHeight="158.4" prefWidth="208.0" style="-fx-border-color: #FFFFFF; -fx-border-width: 4; -fx-border-radius: 15;" styleClass="image-button" stylesheets="@css/style.css">
+                     <children>
+                        <ImageView id="image0" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" />
+                     </children>
+                  </FlowPane>
+                  <FlowPane id="image_container1" fx:id="image_container1" alignment="CENTER" columnHalignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#click1" prefHeight="158.4" prefWidth="208.0" style="-fx-border-color: #FFFFFF; -fx-border-width: 4; -fx-border-radius: 15;" styleClass="image-button" stylesheets="@css/style.css">
+                     <children>
+                        <ImageView id="image1" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" />
+                     </children>
+                  </FlowPane>
+                  <FlowPane id="image_container2" fx:id="image_container2" alignment="CENTER" columnHalignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#click2" prefHeight="158.4" prefWidth="208.0" style="-fx-border-color: #FFFFFF; -fx-border-width: 4; -fx-border-radius: 15;" styleClass="image-button" stylesheets="@css/style.css">
+                     <children>
+                        <ImageView id="image2" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" />
+                     </children>
+                  </FlowPane>
+                  <FlowPane id="image_container3" fx:id="image_container3" alignment="CENTER" columnHalignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#click3" prefHeight="158.4" prefWidth="208.0" style="-fx-border-color: #FFFFFF; -fx-border-width: 4; -fx-border-radius: 15;" styleClass="image-button" stylesheets="@css/style.css">
+                     <children>
+                        <ImageView id="image3" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" />
+                     </children>
+                  </FlowPane>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </FlowPane>
+            </children>
+            <BorderPane.margin>
+                <Insets />
+            </BorderPane.margin>
+        </VBox>
+    </center>
+</BorderPane>

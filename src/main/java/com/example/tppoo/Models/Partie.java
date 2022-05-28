@@ -4,6 +4,8 @@ import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
 
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.*;
 
 public class Partie {
@@ -16,16 +18,21 @@ public class Partie {
     private Plateau plateau;
     private Dé dé1;
     private Dé dé2;
+    private Scene currentScene;
 
     public Partie(Scene scene) {
         this.enCours = true;
         this.enPause = false;
         this.suspendu = false;
         this.plateau = new Plateau();
-        this.plateau.genererPlateau(scene);
         this.dé1 = new Dé();
         this.dé2 = new Dé();
-        chargerDonnees("");
+        this.definitions = new ArrayList<Definition>();
+        this.images = new ArrayList<Image>();
+        chargerDonnees("GameData.txt");
+        this.plateau.genererPlateau(scene,this.definitions,this.images);
+        //this.plateau.genererPlateauPerso(scene,this.definitions,this.images);
+        this.currentScene = scene;
     }
 
     public void rechargerPartie(int joueur_position,Scene scene)
@@ -47,6 +54,7 @@ public class Partie {
         dice_image2.setImage(image2);
 
         this.plateau.chargerPlateauSurScene(joueur_position, scene);
+        this.currentScene = scene;
     }
 
     public int traiterPosition(int joueur_position,boolean a_clique,int numero_clique,Scene scene) throws DestinationException
@@ -62,7 +70,7 @@ public class Partie {
         button.getStyleClass().clear();
         button.getStyleClass().add(this.plateau.getJoueurClassNameFromCouleur(this.plateau.getCases()[joueur_position].getCouleur()));
 
-
+        this.currentScene = scene;
         return joueur_position;
     }
 
@@ -76,7 +84,28 @@ public class Partie {
     }
 
     //charger les images, mots, definitions du fichier ou ils sont stockés
-    public void chargerDonnees(String nomFichier) {}
+    public void chargerDonnees(String nomFichier) {
+        try {
+            File myObj = new File(nomFichier);
+            Scanner myReader = new Scanner(myObj);
+            while (myReader.hasNextLine()) {
+                String data = myReader.nextLine();
+                String[] line = data.substring(2,data.length()).split(" ",2);
+                if(data.charAt(0) == 'I')
+                {
+                    this.images.add(new Image(line[1],line[0]));
+                }
+                else
+                {
+                    this.definitions.add(new Definition(line[1],line[0]));
+                }
+            }
+            myReader.close();
+        } catch (FileNotFoundException e) {
+            System.out.println("An error occurred While reading Players File.");
+            e.printStackTrace();
+        }
+    }
 
     //placer les cases sur le plateau
     public void setPlateau(Plateau plateau) {
@@ -117,5 +146,9 @@ public class Partie {
 
     public Dé getDé2() {
         return dé2;
+    }
+
+    public Scene getCurrentScene() {
+        return currentScene;
     }
 }

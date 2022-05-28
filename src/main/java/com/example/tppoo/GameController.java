@@ -83,13 +83,14 @@ public class GameController {
                     Joueur joueur = MainApplication.jeu.getJoueur_courant();
                     int save_position = joueur.getPosition();
                     joueur.deplacer(dé1.getValeur()+ dé2.getValeur());
+                    //joueur.deplacer(4);
                     try {
-                        int joueur_position = MainApplication.jeu.getPartie_courante().traiterPosition(joueur.getPosition(),joueur.getA_clique(),joueur.getCase_clique(),roll_button.getScene());
-                        joueur.setPosition(joueur_position);
-
                         var button = roll_button.getScene().lookup("#case"+Integer.toString(save_position));
                         button.getStyleClass().clear();
                         button.getStyleClass().add(MainApplication.jeu.getPartie_courante().getPlateau().getClassNameFromCouleur(MainApplication.jeu.getPartie_courante().getPlateau().getCases()[save_position].getCouleur()));
+
+                        int joueur_position = MainApplication.jeu.getPartie_courante().traiterPosition(joueur.getPosition(),joueur.getA_clique(),joueur.getCase_clique(),roll_button.getScene());
+                        joueur.setPosition(joueur_position);
 
                         Label score_label = (Label) roll_button.getScene().lookup("#score_label");
                         Label position_label = (Label) roll_button.getScene().lookup("#position_label");
@@ -107,12 +108,13 @@ public class GameController {
                         while(joueur_position != joueur.getPosition())
                         {
                             Thread.sleep(500);
-                            joueur_position = MainApplication.jeu.getPartie_courante().traiterPosition(joueur.getPosition(),joueur.getA_clique(),joueur.getCase_clique(),roll_button.getScene());
-                            joueur.setPosition(joueur_position);
 
                             button = roll_button.getScene().lookup("#case"+Integer.toString(save_position));
                             button.getStyleClass().clear();
                             button.getStyleClass().add(MainApplication.jeu.getPartie_courante().getPlateau().getClassNameFromCouleur(MainApplication.jeu.getPartie_courante().getPlateau().getCases()[save_position].getCouleur()));
+
+                            joueur_position = MainApplication.jeu.getPartie_courante().traiterPosition(joueur.getPosition(),joueur.getA_clique(),joueur.getCase_clique(),roll_button.getScene());
+                            joueur.setPosition(joueur_position);
 
                             Platform.runLater(
                                     () -> {

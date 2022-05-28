@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tppoo.DefinitionController">
+    <center>
+        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #BBBBBB;" BorderPane.alignment="CENTER">
+            <children>
+                <HBox alignment="CENTER" maxWidth="-Infinity" prefHeight="80.0" prefWidth="550.0" style="-fx-border-color: #FFFFFF; -fx-border-width: 5; -fx-border-style: hidden hidden solid hidden;">
+                    <VBox.margin>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                    </VBox.margin>
+                    <children>
+                        <Label text="Definition" textFill="WHITE">
+                            <font>
+                                <Font name="Yu Gothic Bold" size="45.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </HBox>
+            <Label text="Enter the word in english that fits the definition below">
+               <font>
+                  <Font name="Yu Gothic Regular" size="20.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <HBox alignment="CENTER" maxWidth="550.0" style="-fx-background-color: #EEEEEE; -fx-background-radius: 15;">
+               <children>
+                  <Label id="definition_label" fx:id="definition_label" text="The definition" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font name="Yu Gothic Bold" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="20.0" top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox id="word_hint" fx:id="word_hint" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefWidth="600.0">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </HBox>
+            <TextField id="input_answer" fx:id="input_answer" maxHeight="-Infinity" maxWidth="525.0">
+               <font>
+                  <Font name="Segoe UI" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </TextField>
+                <Button fx:id="submit_button" mnemonicParsing="false" onAction="#submit" styleClass="pause-buttons" stylesheets="@css/style.css" text="          Submit           ">
+                    <padding>
+                        <Insets bottom="20.0" left="200.0" right="200.0" top="20.0" />
+                    </padding>
+                    <font>
+                        <Font name="Segoe UI Semibold" size="14.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                    </VBox.margin>
+                </Button>
+            </children>
+            <BorderPane.margin>
+                <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
+            </BorderPane.margin>
+        </VBox>
+    </center>
+</BorderPane>

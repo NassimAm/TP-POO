@@ -1,0 +1,9 @@
+D mouse A little animal that loves cheese
+D horse Very fast, Strong legs, but most importantly a good friend
+D screwdriver A very useful tool that you will need anytime you want to fiw something
+D car An invention made to replace horses in transport
+I Cat images/cat.jpg
+I Dog images/dog.jpg
+I Dolphin images/dolphin.jpg
+I Eagle images/eagle.jpg
+I Horse images/horse.jpg

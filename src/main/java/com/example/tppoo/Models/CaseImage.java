@@ -1,4 +1,26 @@
 package com.example.tppoo.Models;
+
+import com.example.tppoo.MainApplication;
+import javafx.application.Platform;
+import javafx.fxml.FXMLLoader;
+import javafx.geometry.HPos;
+import javafx.geometry.Insets;
+import javafx.geometry.Pos;
+import javafx.geometry.VPos;
+import javafx.scene.Scene;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
+import javafx.scene.image.ImageView;
+import javafx.scene.layout.FlowPane;
+import javafx.scene.layout.HBox;
+import javafx.scene.shape.Rectangle;
+import javafx.scene.text.Font;
+import javafx.stage.Modality;
+import javafx.stage.Stage;
+
+import java.io.IOException;
+import java.util.Objects;
+
 public class CaseImage extends CaseQuestion {
     private Image[] images;
     private String mot;
@@ -14,11 +36,57 @@ public class CaseImage extends CaseQuestion {
         this.images = images;
     }
 
-    public void CreerFenetre(){};
+    public void CreerFenetre(){
+        Stage stage = new Stage();
+        FXMLLoader fxmlLoader = new FXMLLoader(MainApplication.class.getResource("image-view.fxml"));
+        Scene scene = null;
+        try
+        {
+            scene = new Scene(fxmlLoader.load());
+        }
+        catch(IOException e)
+        {
+            e.printStackTrace();
+            System.out.println("Couldn't load FXML file");
+        }
 
-    public boolean verifierReponse(int index)
+        stage.setTitle("Image Game");
+
+        Label word_label = (Label) scene.lookup("#word_label");
+        word_label.setText(this.mot);
+
+        FlowPane flowPane;
+        for(int i=0;i<this.images.length;i++)
+        {
+            flowPane = (FlowPane) scene.lookup("#image_container"+Integer.toString(i));
+            ImageView imageView = (ImageView) flowPane.getChildren().get(0);
+
+            Platform.runLater(
+                    () -> {
+                        Rectangle clip = new Rectangle(imageView.getFitWidth(), imageView.getFitHeight());
+                        clip.setArcWidth(20);
+                        clip.setArcHeight(20);
+                        imageView.setClip(clip);
+                    }
+            );
+
+            imageView.setImage(new javafx.scene.image.Image(String.valueOf(MainApplication.class.getResource(this.images[i].getLien()))));
+        }
+
+        stage.setScene(scene);
+
+        stage.initOwner(MainApplication.jeu.getPartie_courante().getCurrentScene().getWindow());
+        stage.initModality(Modality.WINDOW_MODAL);
+
+        stage.show();
+    };
+
+    public void verifierReponse(int index,Joueur joueur)
     {
-        return (mot == this.images[index].getMot()); 
+        if(Objects.equals(mot, this.images[index].getMot()))
+            succes(joueur);
+        else
+            echec(joueur);
     }
 
     protected void succes(Joueur joueur){
@@ -28,9 +96,8 @@ public class CaseImage extends CaseQuestion {
     protected void echec(Joueur joueur){};
 
     public void action(Joueur joueur){
-        if(justesseReponse)
-            succes(joueur);
-        else
-            echec(joueur);
+        Platform.runLater(
+                this::CreerFenetre
+        );
     }
 }
