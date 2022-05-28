@@ -26,7 +26,7 @@ public class Plateau {
             {
                 Random rand = new Random();
                 position = rand.nextInt(nbCases-1)+1;
-                if(cases[position] == null)
+                if((cases[position] == null)&&(position != nbCases-2))
                 {
                     trouv = true;
                 }
@@ -97,7 +97,7 @@ public class Plateau {
             {
                 Random rand = new Random();
                 position = rand.nextInt(nbCases-1)+1;
-                if(cases[position] == null)
+                if((cases[position] == null)&&(position != nbCases-3))
                 {
                     trouv = true;
                 }

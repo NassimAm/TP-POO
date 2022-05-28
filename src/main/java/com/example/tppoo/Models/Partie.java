@@ -66,10 +66,14 @@ public class Partie {
             auto = true;
         }
 
+        if(joueur_position == 99) {
+            System.out.println("Vous avez fini la partie");
+            System.out.println("Score : "+Integer.toString(MainApplication.jeu.getJoueur_courant().getScore()));
+        }
+
         var button = scene.lookup("#case"+Integer.toString(joueur_position));
         button.getStyleClass().clear();
         button.getStyleClass().add(this.plateau.getJoueurClassNameFromCouleur(this.plateau.getCases()[joueur_position].getCouleur()));
-
         this.currentScene = scene;
         return joueur_position;
     }
