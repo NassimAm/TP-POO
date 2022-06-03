@@ -63,7 +63,7 @@ public class DefinitionController {
 
                     int joueur_position = 0;
                     try {
-                        joueur_position = MainApplication.jeu.getPartie_courante().traiterPosition(joueur.getPosition(),joueur.getA_clique(),joueur.getCase_clique(),scene);
+                        joueur_position = MainApplication.jeu.getPartie_courante().traiterPosition(joueur.getPosition(),scene);
                     } catch (DestinationException e) {
                         throw new RuntimeException(e);
                     }

@@ -14,6 +14,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
 
 import java.io.File;
@@ -29,19 +30,49 @@ public class GameController {
     private ImageView dice_image2;
 
     @FXML
+    private HBox hint_container;
+
+    @FXML
+    private Label hint_text;
+
+    @FXML
     private Button pause_button;
 
     @FXML
     private Button roll_button;
 
-    /*@FXML
-    private Label error_text;*/
+    @FXML
+    void click(ActionEvent event) {
+        Button button = (Button)event.getSource();
+        String button_id = button.getId();
+        int button_pos = Integer.parseInt(button_id.replace("case",""));
+        Joueur joueur = MainApplication.jeu.getJoueur_courant();
+        Dé dé1 = MainApplication.jeu.getPartie_courante().getDé1();
+        Dé dé2 = MainApplication.jeu.getPartie_courante().getDé2();
+        int save_position = joueur.getPosition();
+
+        if((button_pos == joueur.getProchainePosition())&&(button_pos != joueur.getPosition()))
+        {
+            hint_container.setVisible(false);
+            updateJoueur(dé1,dé2,save_position,dé1.getValeur()+ dé2.getValeur(),joueur);
+        }
+        else
+        {
+            hint_text.setText("Wrong case! Click on case N°"+Integer.toString(joueur.getProchainePosition()));
+        }
+
+        /*if(button_pos != joueur.getPosition())
+        {
+            hint_container.setVisible(false);
+            updateJoueur(dé1,dé2,save_position,button_pos-save_position,joueur);
+        }*/
+
+    }
 
     @FXML
     void pause(ActionEvent event) {
         Stage stage = null;
         Parent newscene = null;
-
         if(event.getSource() == pause_button)
         {
             stage = (Stage) pause_button.getScene().getWindow();
@@ -82,67 +113,22 @@ public class GameController {
                     roll_button.setDisable(false);
                     Joueur joueur = MainApplication.jeu.getJoueur_courant();
                     int save_position = joueur.getPosition();
-                    joueur.deplacer(dé1.getValeur()+ dé2.getValeur());
-                    //joueur.deplacer(4);
-                    try {
-                        var button = (Button)roll_button.getScene().lookup("#case"+Integer.toString(save_position));
-                        Button finalButton = button;
-                        Platform.runLater(
-                                () -> {
-                                    finalButton.setGraphic(null);
-                                }
-                        );
-
-
-                        int joueur_position = MainApplication.jeu.getPartie_courante().traiterPosition(joueur.getPosition(),joueur.getA_clique(),joueur.getCase_clique(),roll_button.getScene());
-                        joueur.setPosition(joueur_position);
-
-                        Label score_label = (Label) roll_button.getScene().lookup("#score_label");
-                        Label position_label = (Label) roll_button.getScene().lookup("#position_label");
-
-                        Platform.runLater(
-                                () -> {
-                                    score_label.setText(Integer.toString(MainApplication.jeu.getJoueur_courant().getScore()));
-                                    position_label.setText(Integer.toString(MainApplication.jeu.getJoueur_courant().getPosition()));
-                                }
-                        );
-
-                        save_position = joueur.getPosition();
-                        MainApplication.jeu.getPartie_courante().getPlateau().getCases()[joueur_position].action(joueur);
-
-                        while(joueur_position != joueur.getPosition())
-                        {
-                            Thread.sleep(500);
-
-                            button = (Button)roll_button.getScene().lookup("#case"+Integer.toString(save_position));
-                            Button finalButton1 = button;
-                            Platform.runLater(
-                                    () -> {
-                                        finalButton1.setGraphic(null);
-                                    }
-                            );
-
-
-                            joueur_position = MainApplication.jeu.getPartie_courante().traiterPosition(joueur.getPosition(),joueur.getA_clique(),joueur.getCase_clique(),roll_button.getScene());
-                            joueur.setPosition(joueur_position);
-
-                            Platform.runLater(
-                                    () -> {
-                                        score_label.setText(Integer.toString(MainApplication.jeu.getJoueur_courant().getScore()));
-                                        position_label.setText(Integer.toString(MainApplication.jeu.getJoueur_courant().getPosition()));
-                                    }
-                            );
-
-                            save_position = joueur.getPosition();
-                            MainApplication.jeu.getPartie_courante().getPlateau().getCases()[joueur_position].action(joueur);
-                        }
-                    }
-                    catch (DestinationException e)
+                    joueur.setProchainePosition(save_position + dé1.getValeur()+ dé2.getValeur());
+                    if(joueur.getProchainePosition()>=100)
                     {
-                        e.printStackTrace();
-                        //error_text.setText("Cliquez sur la bonne case, la case "+Integer.toString(joueur.getPosition()));
+                        updateJoueur(dé1,dé2,save_position,dé1.getValeur()+ dé2.getValeur(),joueur);
                     }
-                    //error_text.setText("");
+                    else
+                    {
+                        hint_container.setVisible(true);
+                        Platform.runLater(
+                                () -> {
+                                    hint_text.setText("Click on the case N°"+Integer.toString(joueur.getProchainePosition()));
+                                }
+                        );
+
+                    }
+
 
                 } catch (InterruptedException e) {
                     e.printStackTrace();
@@ -151,6 +137,73 @@ public class GameController {
         };
 
         thread.start();
+    }
+
+    private void updateJoueur(Dé dé1,Dé dé2,int save_position,int dp,Joueur joueur)
+    {
+        joueur.deplacer(dp);
+        //joueur.deplacer(4);
+        try {
+            var button = (Button)roll_button.getScene().lookup("#case"+Integer.toString(save_position));
+            Button finalButton = button;
+            Platform.runLater(
+                    () -> {
+                        finalButton.setGraphic(null);
+                    }
+            );
+
+
+            int joueur_position = MainApplication.jeu.getPartie_courante().traiterPosition(joueur.getPosition(),roll_button.getScene());
+            joueur.setPosition(joueur_position);
+
+            Label score_label = (Label) roll_button.getScene().lookup("#score_label");
+            Label position_label = (Label) roll_button.getScene().lookup("#position_label");
+
+            Platform.runLater(
+                    () -> {
+                        score_label.setText(Integer.toString(MainApplication.jeu.getJoueur_courant().getScore()));
+                        position_label.setText(Integer.toString(MainApplication.jeu.getJoueur_courant().getPosition()));
+                    }
+            );
+
+            save_position = joueur.getPosition();
+            MainApplication.jeu.getPartie_courante().getPlateau().getCases()[joueur_position].action(joueur);
+
+            while(joueur_position != joueur.getPosition())
+            {
+                Thread.sleep(500);
+
+                button = (Button)roll_button.getScene().lookup("#case"+Integer.toString(save_position));
+                Button finalButton1 = button;
+                Platform.runLater(
+                        () -> {
+                            finalButton1.setGraphic(null);
+                        }
+                );
+
+
+                joueur_position = MainApplication.jeu.getPartie_courante().traiterPosition(joueur.getPosition(),roll_button.getScene());
+                joueur.setPosition(joueur_position);
+
+                Platform.runLater(
+                        () -> {
+                            score_label.setText(Integer.toString(MainApplication.jeu.getJoueur_courant().getScore()));
+                            position_label.setText(Integer.toString(MainApplication.jeu.getJoueur_courant().getPosition()));
+                        }
+                );
+
+                save_position = joueur.getPosition();
+                MainApplication.jeu.getPartie_courante().getPlateau().getCases()[joueur_position].action(joueur);
+            }
+        }
+        catch (DestinationException e)
+        {
+            e.printStackTrace();
+            //error_text.setText("Cliquez sur la bonne case, la case "+Integer.toString(joueur.getPosition()));
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        //error_text.setText("");
     }
 
 }

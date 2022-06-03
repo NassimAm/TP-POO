@@ -59,7 +59,7 @@ public class Partie {
         this.currentScene = scene;
     }
 
-    public int traiterPosition(int joueur_position,boolean a_clique,int numero_clique,Scene scene) throws DestinationException
+    public int traiterPosition(int joueur_position,Scene scene) throws DestinationException
     {
         boolean auto = false;
         if(joueur_position>=100)

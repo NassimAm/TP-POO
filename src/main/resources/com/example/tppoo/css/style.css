@@ -20,6 +20,7 @@
         #9d4024,
         #d86e3a,
         radial-gradient(center 50% 50%, radius 100%, #ea7f4b, #c54e2c);
+    -fx-cursor: hand;
 }
 .case-rouge:pressed {
     -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
@@ -47,6 +48,7 @@
         #409d24,
         #54d83a,
         radial-gradient(center 50% 50%, radius 100%, #70ea4b, #57c52c);
+    -fx-cursor: hand;
 }
 .case-verte:pressed {
     -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
@@ -74,6 +76,7 @@
         #9d9b24,
         #d8cd3a,
         radial-gradient(center 50% 50%, radius 100%,#eae74b, #c5c32c);
+    -fx-cursor: hand;
 }
 .case-jaune:pressed {
     -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
@@ -101,6 +104,7 @@
         #b66e2b,
         #e7903e,
         radial-gradient(center 50% 50%, radius 100%,#fd9f52, #da822f);
+    -fx-cursor: hand;
 }
 .case-orange:pressed {
     -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
@@ -128,6 +132,7 @@
         #24369d,
         #3a45d8,
         radial-gradient(center 50% 50%, radius 100%, #4b5bea, #2c36c5);
+    -fx-cursor: hand
 }
 .case-bleue:pressed {
     -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
@@ -155,6 +160,7 @@
         #9d247f,
         #d83aa9,
         radial-gradient(center 50% 50%, radius 100%, #ea4bba, #c52c97);
+    -fx-cursor: hand
 }
 .case-rose:pressed {
     -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
@@ -182,6 +188,7 @@
         #9b9b9b,
         #d6d6d6,
         radial-gradient(center 50% 50%, radius 100%, #ebebeb, #c4c4c4);
+    -fx-cursor: hand
 }
 .case-standard:pressed {
     -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
@@ -209,6 +216,7 @@
         #535353,
         #888888,
         radial-gradient(center 50% 50%, radius 100%, #a1a1a1, #747474);
+    -fx-cursor: hand
 }
 .case-noire:pressed {
     -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;

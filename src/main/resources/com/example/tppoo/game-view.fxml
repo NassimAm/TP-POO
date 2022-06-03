@@ -24,15 +24,15 @@
       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
    </rowConstraints>
    <children>
-      <BorderPane prefHeight="600.0" prefWidth="746.0" style="-fx-background-color: #DDDDDD;">
+      <BorderPane prefHeight="605.0" prefWidth="762.0" style="-fx-background-color: #DDDDDD;">
          <center>
-            <BorderPane styleClass="bg_page1" stylesheets="@css/style.css" BorderPane.alignment="CENTER">
+            <BorderPane prefHeight="607.0" prefWidth="762.0" styleClass="bg_page1" stylesheets="@css/style.css" BorderPane.alignment="CENTER">
                <center>
-                  <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="612.0" prefWidth="762.0">
+                  <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="552.0" prefWidth="762.0">
                      <children>
-                        <FlowPane id="plateau" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="612.0" prefWidth="762.0">
+                        <FlowPane id="plateau" alignment="CENTER" layoutY="13.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="588.0" prefWidth="762.0">
                            <children>
-                              <Button id="case15" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
+                              <Button id="case15" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
                                  <FlowPane.margin>
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
@@ -40,87 +40,82 @@
                                     <Font name="Segoe UI" size="15.0" />
                                  </font>
                               </Button>
-                              <Button id="case14" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
+                              <Button id="case14" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
                                  <FlowPane.margin>
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
                               </Button>
-                              <Button id="case13" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
+                              <Button id="case13" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
                                  <FlowPane.margin>
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
                               </Button>
-                              <Button id="case12" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
+                              <Button id="case12" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
                                  <FlowPane.margin>
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
                               </Button>
-                              <Button id="case11" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
+                              <Button id="case11" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
                                  <FlowPane.margin>
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
                               </Button>
-                              <Button id="case10" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
+                              <Button id="case10" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
                                  <FlowPane.margin>
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
                               </Button>
-                              <Button id="case9" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
+                              <Button id="case9" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
                                  <FlowPane.margin>
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
                               </Button>
-                              <Button id="case8" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
+                              <Button id="case8" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
                                  <FlowPane.margin>
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
                               </Button>
-                              <Button id="case7" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
+                              <Button id="case7" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
                                  <FlowPane.margin>
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
                               </Button>
-                              <Button id="case6" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
+                              <Button id="case6" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
                                  <FlowPane.margin>
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
                               </Button>
-                              <Button id="case5" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
+                              <Button id="case5" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
                                  <FlowPane.margin>
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
                               </Button>
-                              <Button id="case4" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
+                              <Button id="case4" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
                                  <FlowPane.margin>
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
                               </Button>
-                              <Button id="case3" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
+                              <Button id="case3" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
                                  <FlowPane.margin>
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
                               </Button>
-                              <Button id="case2" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
+                              <Button id="case2" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
                                  <FlowPane.margin>
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
                               </Button>
-                              <Button id="case1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
+                              <Button id="case1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
                                  <FlowPane.margin>
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
                               </Button>
-                              <Button id="case0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
+                              <Button id="case0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
                                  <FlowPane.margin>
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
                               </Button>
-                              <Button id="case16" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
-                                 <FlowPane.margin>
-                                    <Insets top="1.0" />
-                                 </FlowPane.margin>
-                              </Button>
-                              <Button id="case0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                              <Button id="case16" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
                                  <FlowPane.margin>
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
@@ -195,7 +190,12 @@
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
                               </Button>
-                              <Button id="case17" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
+                              <Button id="case0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                                 <FlowPane.margin>
+                                    <Insets top="1.0" />
+                                 </FlowPane.margin>
+                              </Button>
+                              <Button id="case17" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
                                  <FlowPane.margin>
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
@@ -205,77 +205,67 @@
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
                               </Button>
-                              <Button id="case61" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
+                              <Button id="case61" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
                                  <FlowPane.margin>
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
                               </Button>
-                              <Button id="case60" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
+                              <Button id="case60" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
                                  <FlowPane.margin>
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
                               </Button>
-                              <Button id="case59" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
+                              <Button id="case59" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
                                  <FlowPane.margin>
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
                               </Button>
-                              <Button id="case58" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
+                              <Button id="case58" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
                                  <FlowPane.margin>
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
                               </Button>
-                              <Button id="case57" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
+                              <Button id="case57" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
                                  <FlowPane.margin>
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
                               </Button>
-                              <Button id="case56" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
+                              <Button id="case56" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
                                  <FlowPane.margin>
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
                               </Button>
-                              <Button id="case55" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
+                              <Button id="case55" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
                                  <FlowPane.margin>
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
                               </Button>
-                              <Button id="case54" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
+                              <Button id="case54" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
                                  <FlowPane.margin>
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
                               </Button>
-                              <Button id="case53" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
+                              <Button id="case53" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
                                  <FlowPane.margin>
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
                               </Button>
-                              <Button id="case52" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
+                              <Button id="case52" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
                                  <FlowPane.margin>
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
                               </Button>
-                              <Button id="case51" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
+                              <Button id="case51" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
                                  <FlowPane.margin>
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
                               </Button>
-                              <Button id="case50" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
+                              <Button id="case50" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
                                  <FlowPane.margin>
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
                               </Button>
-                              <Button id="case49" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
-                                 <FlowPane.margin>
-                                    <Insets top="1.0" />
-                                 </FlowPane.margin>
-                              </Button>
-                              <Button id="case0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
-                                 <FlowPane.margin>
-                                    <Insets top="1.0" />
-                                 </FlowPane.margin>
-                              </Button>
-                              <Button id="case18" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
+                              <Button id="case49" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
                                  <FlowPane.margin>
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
@@ -285,7 +275,7 @@
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
                               </Button>
-                              <Button id="case62" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
+                              <Button id="case18" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
                                  <FlowPane.margin>
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
@@ -295,12 +285,7 @@
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
                               </Button>
-                              <Button id="case0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
-                                 <FlowPane.margin>
-                                    <Insets top="1.0" />
-                                 </FlowPane.margin>
-                              </Button>
-                              <Button id="case0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                              <Button id="case62" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
                                  <FlowPane.margin>
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
@@ -345,121 +330,6 @@
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
                               </Button>
-                              <Button id="case48" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
-                                 <FlowPane.margin>
-                                    <Insets top="1.0" />
-                                 </FlowPane.margin>
-                              </Button>
-                              <Button id="case0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
-                                 <FlowPane.margin>
-                                    <Insets top="1.0" />
-                                 </FlowPane.margin>
-                              </Button>
-                              <Button id="case19" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
-                                 <FlowPane.margin>
-                                    <Insets top="1.0" />
-                                 </FlowPane.margin>
-                              </Button>
-                              <Button id="case0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
-                                 <FlowPane.margin>
-                                    <Insets top="1.0" />
-                                 </FlowPane.margin>
-                              </Button>
-                              <Button id="case63" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
-                                 <FlowPane.margin>
-                                    <Insets top="1.0" />
-                                 </FlowPane.margin>
-                              </Button>
-                              <Button id="case0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
-                                 <FlowPane.margin>
-                                    <Insets top="1.0" />
-                                 </FlowPane.margin>
-                              </Button>
-                              <Button id="case91" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
-                                 <FlowPane.margin>
-                                    <Insets top="1.0" />
-                                 </FlowPane.margin>
-                              </Button>
-                              <Button id="case90" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
-                                 <FlowPane.margin>
-                                    <Insets top="1.0" />
-                                 </FlowPane.margin>
-                              </Button>
-                              <Button id="case89" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
-                                 <FlowPane.margin>
-                                    <Insets top="1.0" />
-                                 </FlowPane.margin>
-                              </Button>
-                              <Button id="case88" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
-                                 <FlowPane.margin>
-                                    <Insets top="1.0" />
-                                 </FlowPane.margin>
-                              </Button>
-                              <Button id="case87" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
-                                 <FlowPane.margin>
-                                    <Insets top="1.0" />
-                                 </FlowPane.margin>
-                              </Button>
-                              <Button id="case86" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
-                                 <FlowPane.margin>
-                                    <Insets top="1.0" />
-                                 </FlowPane.margin>
-                              </Button>
-                              <Button id="case85" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
-                                 <FlowPane.margin>
-                                    <Insets top="1.0" />
-                                 </FlowPane.margin>
-                              </Button>
-                              <Button id="case84" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
-                                 <FlowPane.margin>
-                                    <Insets top="1.0" />
-                                 </FlowPane.margin>
-                              </Button>
-                              <Button id="case83" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
-                                 <FlowPane.margin>
-                                    <Insets top="1.0" />
-                                 </FlowPane.margin>
-                              </Button>
-                              <Button id="case0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
-                                 <FlowPane.margin>
-                                    <Insets top="1.0" />
-                                 </FlowPane.margin>
-                              </Button>
-                              <Button id="case47" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
-                                 <FlowPane.margin>
-                                    <Insets top="1.0" />
-                                 </FlowPane.margin>
-                              </Button>
-                              <Button id="case0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
-                                 <FlowPane.margin>
-                                    <Insets top="1.0" />
-                                 </FlowPane.margin>
-                              </Button>
-                              <Button id="case20" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
-                                 <FlowPane.margin>
-                                    <Insets top="1.0" />
-                                 </FlowPane.margin>
-                              </Button>
-                              <Button id="case0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
-                                 <FlowPane.margin>
-                                    <Insets top="1.0" />
-                                 </FlowPane.margin>
-                              </Button>
-                              <Button id="case64" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
-                                 <FlowPane.margin>
-                                    <Insets top="1.0" />
-                                 </FlowPane.margin>
-                              </Button>
-                              <Button id="case0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
-                                 <FlowPane.margin>
-                                    <Insets top="1.0" />
-                                 </FlowPane.margin>
-                              </Button>
-                              <Button id="case92" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
-                                 <FlowPane.margin>
-                                    <Insets top="1.0" />
-                                 </FlowPane.margin>
-                              </Button>
                               <Button id="case0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
                                  <FlowPane.margin>
                                     <Insets top="1.0" />
@@ -475,7 +345,7 @@
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
                               </Button>
-                              <Button id="case0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                              <Button id="case48" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
                                  <FlowPane.margin>
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
@@ -485,7 +355,7 @@
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
                               </Button>
-                              <Button id="case0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                              <Button id="case19" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
                                  <FlowPane.margin>
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
@@ -495,7 +365,7 @@
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
                               </Button>
-                              <Button id="case82" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
+                              <Button id="case63" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
                                  <FlowPane.margin>
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
@@ -505,7 +375,47 @@
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
                               </Button>
-                              <Button id="case46" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
+                              <Button id="case91" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
+                                 <FlowPane.margin>
+                                    <Insets top="1.0" />
+                                 </FlowPane.margin>
+                              </Button>
+                              <Button id="case90" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
+                                 <FlowPane.margin>
+                                    <Insets top="1.0" />
+                                 </FlowPane.margin>
+                              </Button>
+                              <Button id="case89" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
+                                 <FlowPane.margin>
+                                    <Insets top="1.0" />
+                                 </FlowPane.margin>
+                              </Button>
+                              <Button id="case88" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
+                                 <FlowPane.margin>
+                                    <Insets top="1.0" />
+                                 </FlowPane.margin>
+                              </Button>
+                              <Button id="case87" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
+                                 <FlowPane.margin>
+                                    <Insets top="1.0" />
+                                 </FlowPane.margin>
+                              </Button>
+                              <Button id="case86" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
+                                 <FlowPane.margin>
+                                    <Insets top="1.0" />
+                                 </FlowPane.margin>
+                              </Button>
+                              <Button id="case85" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
+                                 <FlowPane.margin>
+                                    <Insets top="1.0" />
+                                 </FlowPane.margin>
+                              </Button>
+                              <Button id="case84" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
+                                 <FlowPane.margin>
+                                    <Insets top="1.0" />
+                                 </FlowPane.margin>
+                              </Button>
+                              <Button id="case83" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
                                  <FlowPane.margin>
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
@@ -515,7 +425,7 @@
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
                               </Button>
-                              <Button id="case21" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
+                              <Button id="case47" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
                                  <FlowPane.margin>
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
@@ -525,7 +435,7 @@
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
                               </Button>
-                              <Button id="case65" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
+                              <Button id="case20" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
                                  <FlowPane.margin>
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
@@ -535,7 +445,17 @@
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
                               </Button>
-                              <Button id="case93" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
+                              <Button id="case64" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
+                                 <FlowPane.margin>
+                                    <Insets top="1.0" />
+                                 </FlowPane.margin>
+                              </Button>
+                              <Button id="case0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                                 <FlowPane.margin>
+                                    <Insets top="1.0" />
+                                 </FlowPane.margin>
+                              </Button>
+                              <Button id="case92" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
                                  <FlowPane.margin>
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
@@ -555,7 +475,87 @@
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
                               </Button>
-                              <Button id="case99" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
+                              <Button id="case0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                                 <FlowPane.margin>
+                                    <Insets top="1.0" />
+                                 </FlowPane.margin>
+                              </Button>
+                              <Button id="case0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                                 <FlowPane.margin>
+                                    <Insets top="1.0" />
+                                 </FlowPane.margin>
+                              </Button>
+                              <Button id="case0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                                 <FlowPane.margin>
+                                    <Insets top="1.0" />
+                                 </FlowPane.margin>
+                              </Button>
+                              <Button id="case0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                                 <FlowPane.margin>
+                                    <Insets top="1.0" />
+                                 </FlowPane.margin>
+                              </Button>
+                              <Button id="case82" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
+                                 <FlowPane.margin>
+                                    <Insets top="1.0" />
+                                 </FlowPane.margin>
+                              </Button>
+                              <Button id="case0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                                 <FlowPane.margin>
+                                    <Insets top="1.0" />
+                                 </FlowPane.margin>
+                              </Button>
+                              <Button id="case46" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
+                                 <FlowPane.margin>
+                                    <Insets top="1.0" />
+                                 </FlowPane.margin>
+                              </Button>
+                              <Button id="case0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                                 <FlowPane.margin>
+                                    <Insets top="1.0" />
+                                 </FlowPane.margin>
+                              </Button>
+                              <Button id="case21" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
+                                 <FlowPane.margin>
+                                    <Insets top="1.0" />
+                                 </FlowPane.margin>
+                              </Button>
+                              <Button id="case0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                                 <FlowPane.margin>
+                                    <Insets top="1.0" />
+                                 </FlowPane.margin>
+                              </Button>
+                              <Button id="case65" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
+                                 <FlowPane.margin>
+                                    <Insets top="1.0" />
+                                 </FlowPane.margin>
+                              </Button>
+                              <Button id="case0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                                 <FlowPane.margin>
+                                    <Insets top="1.0" />
+                                 </FlowPane.margin>
+                              </Button>
+                              <Button id="case93" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
+                                 <FlowPane.margin>
+                                    <Insets top="1.0" />
+                                 </FlowPane.margin>
+                              </Button>
+                              <Button id="case0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                                 <FlowPane.margin>
+                                    <Insets top="1.0" />
+                                 </FlowPane.margin>
+                              </Button>
+                              <Button id="case0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                                 <FlowPane.margin>
+                                    <Insets top="1.0" />
+                                 </FlowPane.margin>
+                              </Button>
+                              <Button id="case0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                                 <FlowPane.margin>
+                                    <Insets top="1.0" />
+                                 </FlowPane.margin>
+                              </Button>
+                              <Button id="case99" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
                                  <FlowPane.margin>
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
@@ -589,7 +589,7 @@
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
                               </Button>
-                              <Button id="case81" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
+                              <Button id="case81" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
                                  <FlowPane.margin>
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
@@ -599,7 +599,7 @@
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
                               </Button>
-                              <Button id="case45" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
+                              <Button id="case45" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
                                  <FlowPane.margin>
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
@@ -609,7 +609,7 @@
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
                               </Button>
-                              <Button id="case22" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
+                              <Button id="case22" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
                                  <FlowPane.margin>
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
@@ -619,7 +619,7 @@
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
                               </Button>
-                              <Button id="case66" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
+                              <Button id="case66" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
                                  <FlowPane.margin>
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
@@ -629,77 +629,27 @@
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
                               </Button>
-                              <Button id="case94" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
+                              <Button id="case94" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
                                  <FlowPane.margin>
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
                               </Button>
-                              <Button id="case95" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
+                              <Button id="case95" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
                                  <FlowPane.margin>
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
                               </Button>
-                              <Button id="case96" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
+                              <Button id="case96" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
                                  <FlowPane.margin>
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
                               </Button>
-                              <Button id="case97" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
+                              <Button id="case97" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
                                  <FlowPane.margin>
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
                               </Button>
-                              <Button id="case98" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
-                                 <FlowPane.margin>
-                                    <Insets top="1.0" />
-                                 </FlowPane.margin>
-                              </Button>
-                              <Button id="case0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
-                                 <FlowPane.margin>
-                                    <Insets top="1.0" />
-                                 </FlowPane.margin>
-                              </Button>
-                              <Button id="case0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
-                                 <FlowPane.margin>
-                                    <Insets top="1.0" />
-                                 </FlowPane.margin>
-                              </Button>
-                              <Button id="case0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
-                                 <FlowPane.margin>
-                                    <Insets top="1.0" />
-                                 </FlowPane.margin>
-                              </Button>
-                              <Button id="case80" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
-                                 <FlowPane.margin>
-                                    <Insets top="1.0" />
-                                 </FlowPane.margin>
-                              </Button>
-                              <Button id="case0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
-                                 <FlowPane.margin>
-                                    <Insets top="1.0" />
-                                 </FlowPane.margin>
-                              </Button>
-                              <Button id="case44" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
-                                 <FlowPane.margin>
-                                    <Insets top="1.0" />
-                                 </FlowPane.margin>
-                              </Button>
-                              <Button id="case0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
-                                 <FlowPane.margin>
-                                    <Insets top="1.0" />
-                                 </FlowPane.margin>
-                              </Button>
-                              <Button id="case23" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
-                                 <FlowPane.margin>
-                                    <Insets top="1.0" />
-                                 </FlowPane.margin>
-                              </Button>
-                              <Button id="case0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
-                                 <FlowPane.margin>
-                                    <Insets top="1.0" />
-                                 </FlowPane.margin>
-                              </Button>
-                              <Button id="case67" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
+                              <Button id="case98" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
                                  <FlowPane.margin>
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
@@ -710,6 +660,46 @@
                                  </FlowPane.margin>
                               </Button>
                               <Button id="case0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                                 <FlowPane.margin>
+                                    <Insets top="1.0" />
+                                 </FlowPane.margin>
+                              </Button>
+                              <Button id="case0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                                 <FlowPane.margin>
+                                    <Insets top="1.0" />
+                                 </FlowPane.margin>
+                              </Button>
+                              <Button id="case80" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
+                                 <FlowPane.margin>
+                                    <Insets top="1.0" />
+                                 </FlowPane.margin>
+                              </Button>
+                              <Button id="case0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                                 <FlowPane.margin>
+                                    <Insets top="1.0" />
+                                 </FlowPane.margin>
+                              </Button>
+                              <Button id="case44" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
+                                 <FlowPane.margin>
+                                    <Insets top="1.0" />
+                                 </FlowPane.margin>
+                              </Button>
+                              <Button id="case0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                                 <FlowPane.margin>
+                                    <Insets top="1.0" />
+                                 </FlowPane.margin>
+                              </Button>
+                              <Button id="case23" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
+                                 <FlowPane.margin>
+                                    <Insets top="1.0" />
+                                 </FlowPane.margin>
+                              </Button>
+                              <Button id="case0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                                 <FlowPane.margin>
+                                    <Insets top="1.0" />
+                                 </FlowPane.margin>
+                              </Button>
+                              <Button id="case67" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
                                  <FlowPane.margin>
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
@@ -749,7 +739,17 @@
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
                               </Button>
-                              <Button id="case79" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
+                              <Button id="case0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                                 <FlowPane.margin>
+                                    <Insets top="1.0" />
+                                 </FlowPane.margin>
+                              </Button>
+                              <Button id="case0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                                 <FlowPane.margin>
+                                    <Insets top="1.0" />
+                                 </FlowPane.margin>
+                              </Button>
+                              <Button id="case79" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
                                  <FlowPane.margin>
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
@@ -759,7 +759,7 @@
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
                               </Button>
-                              <Button id="case43" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
+                              <Button id="case43" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
                                  <FlowPane.margin>
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
@@ -769,7 +769,7 @@
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
                               </Button>
-                              <Button id="case24" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
+                              <Button id="case24" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
                                  <FlowPane.margin>
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
@@ -779,67 +779,57 @@
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
                               </Button>
-                              <Button id="case68" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
+                              <Button id="case68" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
                                  <FlowPane.margin>
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
                               </Button>
-                              <Button id="case69" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
+                              <Button id="case69" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
                                  <FlowPane.margin>
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
                               </Button>
-                              <Button id="case70" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
+                              <Button id="case70" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
                                  <FlowPane.margin>
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
                               </Button>
-                              <Button id="case71" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
+                              <Button id="case71" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
                                  <FlowPane.margin>
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
                               </Button>
-                              <Button id="case72" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
+                              <Button id="case72" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
                                  <FlowPane.margin>
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
                               </Button>
-                              <Button id="case73" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
+                              <Button id="case73" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
                                  <FlowPane.margin>
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
                               </Button>
-                              <Button id="case74" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
+                              <Button id="case74" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
                                  <FlowPane.margin>
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
                               </Button>
-                              <Button id="case75" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
+                              <Button id="case75" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
                                  <FlowPane.margin>
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
                               </Button>
-                              <Button id="case76" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
+                              <Button id="case76" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
                                  <FlowPane.margin>
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
                               </Button>
-                              <Button id="case77" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
+                              <Button id="case77" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
                                  <FlowPane.margin>
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
                               </Button>
-                              <Button id="case78" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
-                                 <FlowPane.margin>
-                                    <Insets top="1.0" />
-                                 </FlowPane.margin>
-                              </Button>
-                              <Button id="case0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
-                                 <FlowPane.margin>
-                                    <Insets top="1.0" />
-                                 </FlowPane.margin>
-                              </Button>
-                              <Button id="case42" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
+                              <Button id="case78" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
                                  <FlowPane.margin>
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
@@ -849,7 +839,7 @@
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
                               </Button>
-                              <Button id="case25" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
+                              <Button id="case42" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
                                  <FlowPane.margin>
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
@@ -859,7 +849,7 @@
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
                               </Button>
-                              <Button id="case0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
+                              <Button id="case25" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
                                  <FlowPane.margin>
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
@@ -919,7 +909,7 @@
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
                               </Button>
-                              <Button id="case41" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
+                              <Button id="case0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
                                  <FlowPane.margin>
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
@@ -929,77 +919,87 @@
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
                               </Button>
-                              <Button id="case26" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
+                              <Button id="case41" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
                                  <FlowPane.margin>
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
                               </Button>
-                              <Button id="case27" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
+                              <Button id="case0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css" visible="false">
                                  <FlowPane.margin>
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
                               </Button>
-                              <Button id="case28" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
+                              <Button id="case26" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
                                  <FlowPane.margin>
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
                               </Button>
-                              <Button id="case29" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
+                              <Button id="case27" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
                                  <FlowPane.margin>
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
                               </Button>
-                              <Button id="case30" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
+                              <Button id="case28" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
                                  <FlowPane.margin>
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
                               </Button>
-                              <Button id="case31" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
+                              <Button id="case29" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
                                  <FlowPane.margin>
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
                               </Button>
-                              <Button id="case32" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
+                              <Button id="case30" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
                                  <FlowPane.margin>
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
                               </Button>
-                              <Button id="case33" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css" textAlignment="CENTER">
+                              <Button id="case31" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
                                  <FlowPane.margin>
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
                               </Button>
-                              <Button id="case34" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
+                              <Button id="case32" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
                                  <FlowPane.margin>
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
                               </Button>
-                              <Button id="case35" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
+                              <Button id="case33" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css" textAlignment="CENTER">
                                  <FlowPane.margin>
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
                               </Button>
-                              <Button id="case36" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
+                              <Button id="case34" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
                                  <FlowPane.margin>
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
                               </Button>
-                              <Button id="case37" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
+                              <Button id="case35" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
                                  <FlowPane.margin>
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
                               </Button>
-                              <Button id="case38" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
+                              <Button id="case36" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
                                  <FlowPane.margin>
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
                               </Button>
-                              <Button id="case39" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
+                              <Button id="case37" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
                                  <FlowPane.margin>
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
                               </Button>
-                              <Button id="case40" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
+                              <Button id="case38" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
+                                 <FlowPane.margin>
+                                    <Insets top="1.0" />
+                                 </FlowPane.margin>
+                              </Button>
+                              <Button id="case39" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
+                                 <FlowPane.margin>
+                                    <Insets top="1.0" />
+                                 </FlowPane.margin>
+                              </Button>
+                              <Button id="case40" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.2" prefWidth="40.0" styleClass="case-standard" stylesheets="@css/style.css">
                                  <FlowPane.margin>
                                     <Insets top="1.0" />
                                  </FlowPane.margin>
@@ -1011,12 +1011,26 @@
                               </Button>
                            </children>
                            <padding>
-                              <Insets bottom="45.0" left="45.0" right="45.0" top="45.0" />
+                              <Insets bottom="80.0" left="45.0" right="45.0" />
                            </padding>
                         </FlowPane>
                      </children>
                   </Pane>
                </center>
+               <top>
+                  <HBox id="hint_container" fx:id="hint_container" alignment="CENTER" maxWidth="400.0" style="-fx-background-color: rgb(230,230,230,0.95); -fx-background-radius: 5;" visible="false" BorderPane.alignment="CENTER">
+                     <BorderPane.margin>
+                        <Insets top="30.0" />
+                     </BorderPane.margin>
+                     <children>
+                        <Label id="hint_text" fx:id="hint_text" text="Label" textFill="RED">
+                           <font>
+                              <Font name="Segoe UI Semibold" size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </top>
             </BorderPane>
          </center>
       </BorderPane>

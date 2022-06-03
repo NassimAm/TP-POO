@@ -6,8 +6,7 @@ public class Joueur {
     private int meilleurScore = 0;
     private int position = 0;
     private int score;
-    private int case_clique = 0;
-    private boolean a_clique = false;
+    private int prochainePosition = 0;
 
     public Joueur(String nom)
     {
@@ -35,12 +34,6 @@ public class Joueur {
         désValeurs[0] = dé1.GenererCoup();
         désValeurs[1] = dé2.GenererCoup();
         return désValeurs;
-    }
-
-    //retourner le numero de case cliquée
-    public void cliquerCase(int numero) {
-        case_clique = numero;
-        a_clique = true;
     }
 
     //ajouter "points" au score courant
@@ -75,19 +68,17 @@ public class Joueur {
         return score;
     }
 
-    public int getCase_clique() {
-        return case_clique;
-    }
-
-    public boolean getA_clique() {
-        return a_clique;
-    }
-
     public void reset()
     {
         this.position = 0;
         this.score = 0;
-        this.case_clique = 0;
-        this.a_clique = false;
+    }
+
+    public int getProchainePosition() {
+        return prochainePosition;
+    }
+
+    public void setProchainePosition(int prochainePosition) {
+        this.prochainePosition = prochainePosition;
     }
 }
