@@ -8,9 +8,9 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tppoo.PauseController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" styleClass="bg_page2" stylesheets="@css/style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tppoo.PauseController">
    <center>
-      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #BBBBBB;" BorderPane.alignment="CENTER">
+      <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="450.0" prefWidth="550.0" style="-fx-background-color: rgb(40, 48, 110,0.8); -fx-background-radius: 15;" BorderPane.alignment="CENTER">
          <children>
             <HBox alignment="CENTER" maxWidth="-Infinity" prefHeight="80.0" prefWidth="500.0" style="-fx-border-color: #FFFFFF; -fx-border-width: 5; -fx-border-style: hidden hidden solid hidden;">
                <VBox.margin>
@@ -24,7 +24,7 @@
                   </Label>
                </children>
             </HBox>
-            <Button fx:id="resume_button" mnemonicParsing="false" onAction="#continuer" styleClass="pause-buttons" stylesheets="@css/style.css" text="RESUME">
+            <Button fx:id="resume_button" mnemonicParsing="false" onAction="#continuer" styleClass="pause-button3" stylesheets="@css/style.css" text="RESUME">
                <padding>
                   <Insets bottom="20.0" left="200.0" right="200.0" top="20.0" />
                </padding>
@@ -35,7 +35,7 @@
                   <Insets bottom="10.0" top="10.0" />
                </VBox.margin>
             </Button>
-            <Button fx:id="save_button" mnemonicParsing="false" onAction="#sauvegarder" styleClass="pause-buttons" stylesheets="@css/style.css" text="   SAVE   ">
+            <Button fx:id="save_button" mnemonicParsing="false" onAction="#sauvegarder" styleClass="pause-button3" stylesheets="@css/style.css" text="   SAVE   ">
                <padding>
                   <Insets bottom="20.0" left="200.0" right="200.0" top="20.0" />
                </padding>
@@ -46,7 +46,7 @@
                   <Insets bottom="10.0" top="10.0" />
                </VBox.margin>
             </Button>
-            <Button fx:id="quit_button" mnemonicParsing="false" onAction="#quitter" styleClass="pause-buttons" stylesheets="@css/style.css" text="   QUIT   ">
+            <Button fx:id="quit_button" mnemonicParsing="false" onAction="#quitter" styleClass="pause-button3" stylesheets="@css/style.css" text="   QUIT   ">
                <padding>
                   <Insets bottom="20.0" left="200.0" right="200.0" top="20.0" />
                </padding>

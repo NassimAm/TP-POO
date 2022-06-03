@@ -3,18 +3,30 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tppoo.MainMenuController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" styleClass="bg_page3" stylesheets="@css/style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tppoo.MainMenuController">
     <center>
-        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #BBBBBB;" BorderPane.alignment="CENTER">
+        <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="580.0" prefWidth="600.0" style="-fx-background-color: rgb(40, 48, 110,0.8); -fx-background-radius: 15;" BorderPane.alignment="CENTER">
             <children>
+            <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="120.0" prefWidth="200.0" style="-fx-background-color: rgb(255,255,255,0.8); -fx-background-radius: 15;">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/Peak_Logo.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
                 <HBox alignment="CENTER" maxWidth="-Infinity" prefHeight="80.0" prefWidth="500.0" style="-fx-border-color: #FFFFFF; -fx-border-width: 5; -fx-border-style: hidden hidden solid hidden;">
                     <VBox.margin>
-                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                        <Insets bottom="20.0" left="20.0" right="20.0" />
                     </VBox.margin>
                     <children>
                         <Label text="Main Menu" textFill="WHITE">
@@ -24,7 +36,7 @@
                         </Label>
                     </children>
                 </HBox>
-                <Button fx:id="new_game_button" mnemonicParsing="false" onAction="#nouvelle_partie" styleClass="pause-buttons" stylesheets="@css/style.css" text="    New Game    ">
+                <Button fx:id="new_game_button" mnemonicParsing="false" onAction="#nouvelle_partie" styleClass="pause-button3" stylesheets="@css/style.css" text="    New Game    ">
                     <padding>
                         <Insets bottom="20.0" left="200.0" right="200.0" top="20.0" />
                     </padding>
@@ -35,7 +47,7 @@
                         <Insets bottom="10.0" top="10.0" />
                     </VBox.margin>
                 </Button>
-                <Button fx:id="continue_game_button" mnemonicParsing="false" onAction="#continer_partie" styleClass="pause-buttons" stylesheets="@css/style.css" text="Continue Game">
+                <Button fx:id="continue_game_button" mnemonicParsing="false" onAction="#continer_partie" styleClass="pause-button3" stylesheets="@css/style.css" text="Continue Game">
                     <padding>
                         <Insets bottom="20.0" left="200.0" right="200.0" top="20.0" />
                     </padding>
@@ -46,7 +58,7 @@
                         <Insets bottom="10.0" top="10.0" />
                     </VBox.margin>
                 </Button>
-            <Button fx:id="leaderboards_button" mnemonicParsing="false" onAction="#vers_classements" styleClass="pause-buttons" stylesheets="@css/style.css" text="  LeaderBoards  ">
+            <Button fx:id="leaderboards_button" mnemonicParsing="false" onAction="#vers_classements" styleClass="pause-button3" stylesheets="@css/style.css" text="  LeaderBoards  ">
                <padding>
                   <Insets bottom="20.0" left="200.0" right="200.0" top="20.0" />
                </padding>
@@ -57,7 +69,7 @@
                   <Insets bottom="10.0" top="10.0" />
                </VBox.margin>
             </Button>
-                <Button fx:id="quit_menu_button" mnemonicParsing="false" onAction="#quitter" styleClass="pause-buttons" stylesheets="@css/style.css" text="         Quit          ">
+                <Button fx:id="quit_menu_button" mnemonicParsing="false" onAction="#quitter" styleClass="pause-button3" stylesheets="@css/style.css" text="         Quit          ">
                     <padding>
                         <Insets bottom="20.0" left="200.0" right="200.0" top="20.0" />
                     </padding>

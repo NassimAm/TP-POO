@@ -34,8 +34,8 @@ public class GameController {
     @FXML
     private Button roll_button;
 
-    @FXML
-    private Label error_text;
+    /*@FXML
+    private Label error_text;*/
 
     @FXML
     void pause(ActionEvent event) {
@@ -85,9 +85,14 @@ public class GameController {
                     joueur.deplacer(dé1.getValeur()+ dé2.getValeur());
                     //joueur.deplacer(4);
                     try {
-                        var button = roll_button.getScene().lookup("#case"+Integer.toString(save_position));
-                        button.getStyleClass().clear();
-                        button.getStyleClass().add(MainApplication.jeu.getPartie_courante().getPlateau().getClassNameFromCouleur(MainApplication.jeu.getPartie_courante().getPlateau().getCases()[save_position].getCouleur()));
+                        var button = (Button)roll_button.getScene().lookup("#case"+Integer.toString(save_position));
+                        Button finalButton = button;
+                        Platform.runLater(
+                                () -> {
+                                    finalButton.setGraphic(null);
+                                }
+                        );
+
 
                         int joueur_position = MainApplication.jeu.getPartie_courante().traiterPosition(joueur.getPosition(),joueur.getA_clique(),joueur.getCase_clique(),roll_button.getScene());
                         joueur.setPosition(joueur_position);
@@ -109,9 +114,14 @@ public class GameController {
                         {
                             Thread.sleep(500);
 
-                            button = roll_button.getScene().lookup("#case"+Integer.toString(save_position));
-                            button.getStyleClass().clear();
-                            button.getStyleClass().add(MainApplication.jeu.getPartie_courante().getPlateau().getClassNameFromCouleur(MainApplication.jeu.getPartie_courante().getPlateau().getCases()[save_position].getCouleur()));
+                            button = (Button)roll_button.getScene().lookup("#case"+Integer.toString(save_position));
+                            Button finalButton1 = button;
+                            Platform.runLater(
+                                    () -> {
+                                        finalButton1.setGraphic(null);
+                                    }
+                            );
+
 
                             joueur_position = MainApplication.jeu.getPartie_courante().traiterPosition(joueur.getPosition(),joueur.getA_clique(),joueur.getCase_clique(),roll_button.getScene());
                             joueur.setPosition(joueur_position);
@@ -130,9 +140,9 @@ public class GameController {
                     catch (DestinationException e)
                     {
                         e.printStackTrace();
-                        error_text.setText("Cliquez sur la bonne case, la case "+Integer.toString(joueur.getPosition()));
+                        //error_text.setText("Cliquez sur la bonne case, la case "+Integer.toString(joueur.getPosition()));
                     }
-                    error_text.setText("");
+                    //error_text.setText("");
 
                 } catch (InterruptedException e) {
                     e.printStackTrace();

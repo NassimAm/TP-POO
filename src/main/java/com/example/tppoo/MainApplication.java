@@ -7,6 +7,7 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.ButtonBar;
+import javafx.scene.image.Image;
 import javafx.scene.layout.FlowPane;
 import javafx.stage.Stage;
 
@@ -38,6 +39,7 @@ public class MainApplication extends Application {
 
 
         //jeu.jouer();
+        stage.getIcons().add(new Image(String.valueOf(MainApplication.class.getResource("icon/Peak_Logo_Icon.png"))));
         stage.setTitle("Login");
         stage.setScene(scene);
         stage.show();

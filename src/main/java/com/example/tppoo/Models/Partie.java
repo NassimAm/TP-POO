@@ -1,6 +1,8 @@
 package com.example.tppoo.Models;
 import com.example.tppoo.MainApplication;
+import javafx.application.Platform;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
 
@@ -66,9 +68,13 @@ public class Partie {
             auto = true;
         }
 
-        var button = scene.lookup("#case"+Integer.toString(joueur_position));
-        button.getStyleClass().clear();
-        button.getStyleClass().add(this.plateau.getJoueurClassNameFromCouleur(this.plateau.getCases()[joueur_position].getCouleur()));
+        var button = (Button)scene.lookup("#case"+Integer.toString(joueur_position));
+        Platform.runLater(
+                () -> {
+                    button.setGraphic(this.getPlateau().generateJoueurImage());
+                }
+        );
+
         this.currentScene = scene;
 
         if(joueur_position == 99) {

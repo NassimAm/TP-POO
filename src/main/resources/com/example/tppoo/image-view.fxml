@@ -9,9 +9,9 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tppoo.ImageController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" styleClass="bg_page2" stylesheets="@css/style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tppoo.ImageController">
     <center>
-        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #BBBBBB;" BorderPane.alignment="CENTER">
+        <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="570.0" prefWidth="600.0" style="-fx-background-color: rgb(40,48,110,0.8); -fx-background-radius: 15;" BorderPane.alignment="CENTER">
             <children>
                 <HBox alignment="CENTER" maxWidth="-Infinity" prefHeight="80.0" prefWidth="550.0" style="-fx-border-color: #FFFFFF; -fx-border-width: 5; -fx-border-style: hidden hidden solid hidden;">
                     <VBox.margin>
@@ -25,7 +25,7 @@
                         </Label>
                     </children>
                 </HBox>
-                <Label text="Choose the image that fits the word">
+                <Label text="Choose the image that fits the word" textFill="WHITE">
                     <font>
                         <Font name="Yu Gothic Regular" size="20.0" />
                     </font>
@@ -33,9 +33,9 @@
                         <Insets />
                     </VBox.margin>
                 </Label>
-                <HBox alignment="CENTER" maxWidth="550.0" style="-fx-background-color: #EEEEEE; -fx-background-radius: 15;">
+                <HBox alignment="CENTER" maxWidth="550.0" style="-fx-background-color: rgb(242,145,0,0.8); -fx-background-radius: 15;">
                     <children>
-                        <Label id="word_label" fx:id="word_label" text="The Word" textAlignment="CENTER" wrapText="true">
+                        <Label id="word_label" fx:id="word_label" text="The Word" textAlignment="CENTER" textFill="WHITE" wrapText="true">
                             <font>
                                 <Font name="Yu Gothic Bold" size="20.0" />
                             </font>

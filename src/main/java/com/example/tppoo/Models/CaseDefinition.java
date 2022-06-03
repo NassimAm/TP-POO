@@ -10,6 +10,7 @@ import javafx.geometry.VPos;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
 import javafx.scene.layout.FlowPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
@@ -70,6 +71,7 @@ public class CaseDefinition extends CaseQuestion {
             Label label = new Label();
             label.setText("");
             label.setFont(new Font("Segoe UI Semibold",50));
+            label.setStyle("-fx-text-fill: #FFFFFF");
             flowPane.getChildren().add(label);
             HBox.setMargin(flowPane,new Insets(0,5,10,5));
             word_hint.getChildren().add(flowPane);
@@ -93,7 +95,7 @@ public class CaseDefinition extends CaseQuestion {
                     }
                 }
         );
-
+        stage.getIcons().add(new Image(String.valueOf(MainApplication.class.getResource("icon/Peak_Logo_Icon.png"))));
         stage.setScene(scene);
 
         stage.initOwner(MainApplication.jeu.getPartie_courante().getCurrentScene().getWindow());

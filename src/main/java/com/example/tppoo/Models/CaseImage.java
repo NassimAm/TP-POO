@@ -76,7 +76,7 @@ public class CaseImage extends CaseQuestion {
 
             imageView.setImage(new javafx.scene.image.Image(String.valueOf(MainApplication.class.getResource(this.images[i].getLien()))));
         }
-
+        stage.getIcons().add(new javafx.scene.image.Image(String.valueOf(MainApplication.class.getResource("icon/Peak_Logo_Icon.png"))));
         stage.setScene(scene);
 
         stage.initOwner(MainApplication.jeu.getPartie_courante().getCurrentScene().getWindow());
