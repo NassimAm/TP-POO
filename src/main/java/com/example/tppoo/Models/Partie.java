@@ -5,6 +5,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
+import javafx.scene.layout.HBox;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -37,7 +38,7 @@ public class Partie {
         this.currentScene = scene;
     }
 
-    public void rechargerPartie(int joueur_position,Scene scene)
+    public void rechargerPartie(int joueur_position,int prochaine_position,Scene scene)
     {
         Label player_name = (Label) scene.lookup("#player_name_label");
         player_name.setText(MainApplication.jeu.getJoueur_courant().getNom());
@@ -54,6 +55,19 @@ public class Partie {
         javafx.scene.image.Image image2 = new javafx.scene.image.Image(Objects.requireNonNull(MainApplication.class.getResourceAsStream("images/dice/dice" + Integer.toString(dé2.getValeur()) + ".png")));
         ImageView dice_image2 = (ImageView) scene.lookup("#dice_image2");
         dice_image2.setImage(image2);
+
+        if(joueur_position != prochaine_position)
+        {
+            HBox hint_container = (HBox) scene.lookup("#hint_container");
+            hint_container.setVisible(true);
+
+            Label hint_text = (Label) scene.lookup("#hint_text");
+            hint_text.setText("Click on the case N°"+Integer.toString(prochaine_position));
+
+            Button roll_button = (Button) scene.lookup("#roll_button");
+            roll_button.setDisable(true);
+        }
+
 
         this.plateau.chargerPlateauSurScene(joueur_position, scene);
         this.currentScene = scene;

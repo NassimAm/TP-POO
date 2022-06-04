@@ -88,6 +88,7 @@ public class DefinitionController {
                             }
                     );
                 }
+                joueur.setProchainePosition(joueur.getPosition());
             }
         };
 

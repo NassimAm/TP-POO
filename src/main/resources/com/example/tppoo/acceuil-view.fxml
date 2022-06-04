@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<FlowPane alignment="CENTER" columnHalignment="CENTER" prefHeight="600.0" prefWidth="1000.0" styleClass="bg_page1" stylesheets="@css/style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+<FlowPane alignment="CENTER" columnHalignment="CENTER" prefHeight="600.0" prefWidth="1000.0" styleClass="bg_page1" stylesheets="@css/style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tppoo.AcceuilController">
    <children>
       <VBox alignment="CENTER" prefHeight="400.0" prefWidth="400.0" style="-fx-background-color: rgba(255, 255,255, 0.8); -fx-background-radius: 15;">
          <children>
@@ -26,7 +26,7 @@
                   <Font name="Segoe UI Semibold" size="20.0" />
                </font>
             </Label>
-            <Button mnemonicParsing="false" styleClass="pause-button3" stylesheets="@css/style.css" text="Play">
+            <Button mnemonicParsing="false" onAction="#play" styleClass="pause-button3" stylesheets="@css/style.css" text="Play">
                <font>
                   <Font name="Segoe UI Semibold" size="24.0" />
                </font>

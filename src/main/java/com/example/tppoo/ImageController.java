@@ -109,6 +109,8 @@ public class ImageController {
                             }
                     );
                 }
+
+                joueur.setProchainePosition(joueur.getPosition());
             }
         };
 

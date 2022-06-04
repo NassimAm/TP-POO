@@ -17,7 +17,7 @@ public class MainApplication extends Application {
     public static Jeu jeu;
     @Override
     public void start(Stage stage){
-        FXMLLoader fxmlLoader = new FXMLLoader(MainApplication.class.getResource("login-view.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(MainApplication.class.getResource("acceuil-view.fxml"));
         Scene scene = null;
         try
         {

@@ -55,6 +55,8 @@ public class GameController {
         {
             hint_container.setVisible(false);
             updateJoueur(dé1,dé2,save_position,dé1.getValeur()+ dé2.getValeur(),joueur);
+            joueur.setProchainePosition(joueur.getPosition());
+            roll_button.setDisable(false);
         }
         else
         {
@@ -65,6 +67,7 @@ public class GameController {
         {
             hint_container.setVisible(false);
             updateJoueur(dé1,dé2,save_position,button_pos-save_position,joueur);
+            roll_button.setDisable(false);
         }*/
 
     }
@@ -110,13 +113,16 @@ public class GameController {
                         dice_image2.setImage(image2);
                         Thread.sleep(50);
                     }
-                    roll_button.setDisable(false);
                     Joueur joueur = MainApplication.jeu.getJoueur_courant();
                     int save_position = joueur.getPosition();
                     joueur.setProchainePosition(save_position + dé1.getValeur()+ dé2.getValeur());
+                    //boolean auto = false;
+                    //if((joueur.getProchainePosition()>=100) || auto)
                     if(joueur.getProchainePosition()>=100)
                     {
                         updateJoueur(dé1,dé2,save_position,dé1.getValeur()+ dé2.getValeur(),joueur);
+                        roll_button.setDisable(false);
+                        joueur.setProchainePosition(joueur.getPosition());
                     }
                     else
                     {
