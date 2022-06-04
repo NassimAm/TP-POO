@@ -1,33 +1,19 @@
 package com.example.tppoo.Models;
+import com.example.tppoo.MainApplication;
+import javafx.application.Platform;
+import javafx.scene.Scene;
+
 import java.io.*;
 import java.util.*;
-public class Jeu {
+public class Jeu implements Serializable {
 
     public ArrayList<Joueur>joueurs = new ArrayList<Joueur>(); //une liste des joueurs
-    public ArrayList<Partie> parties = new ArrayList<Partie>(); //une liste des parties
+    //public ArrayList<Partie> parties = new ArrayList<Partie>(); //une liste des parties
     private Joueur joueur_courant;
     private  Partie partie_courante;
 
     //commencer le jeu
-    public void jouer() {
-
-    }
-
-    public void chargerJoueurs(String filename)
-    {
-        try {
-            File myObj = new File(filename);
-            Scanner myReader = new Scanner(myObj);
-            while (myReader.hasNextLine()) {
-                String data = myReader.nextLine();
-                this.joueurs.add(new Joueur(data));
-            }
-            myReader.close();
-        } catch (FileNotFoundException e) {
-            System.out.println("An error occurred While reading Players File.");
-            e.printStackTrace();
-        }
-    }
+    public void jouer() {}
 
     //Identifier le joueur
     public boolean identifierJoueur(String nom)
@@ -44,29 +30,38 @@ public class Jeu {
 
     public void enregistrerJoueur(String nom)
     {
-        chargerJoueurs("Joueurs.txt");
-        if(identifierJoueur(nom))
+
+        //chargerJoueurs("Joueurs");
+       for (int i =0; i < this.joueurs.size();i++) {
+            System.out.println(this.joueurs.get(i).getNom());
+        }
+        if(identifierJoueur(nom)) //si le joueur existe
         {
             System.out.println(nom + " a ete indentifie avec succes");
-        }
-        else
-        {
-            System.out.println(nom + " est un nouveau joueur");
-            this.joueurs.add(new Joueur(nom));
-            try {
-                FileWriter myWriter = new FileWriter("Joueurs.txt",true);
-                myWriter.write(nom+"\n");
-                myWriter.close();
-            } catch (IOException e) {
-                System.out.println("An error occurred While Writing in Players File.");
-                e.printStackTrace();
+            //charger ses parties
+            //initialiser le joueur courant
+            for (int i=0; i < this.joueurs.size(); i++) {
+                if (this.joueurs.get(i).getNom().equals(nom)) {
+                    this.joueur_courant = this.joueurs.get(i);
+                }
             }
         }
-        this.joueur_courant = new Joueur(nom);
+        else //c'est un nouveau joueur
+        {
+            System.out.println(nom + " est un nouveau joueur");
+            this.joueur_courant = new Joueur(nom);
+            this.joueurs.add(this.joueur_courant);
+
+        }
+
+
     }
 
-    //afficher le meilleur score d'un joueur
-    public void afficherMeilleurScore(Joueur joueur) {}
+    //afficher les meilleurs scores
+    public void afficherMeilleursScores() {
+
+
+    }
 
     //afficher le meilleur score atteint dans le jeu
     public void afficherRecordABattre() {}
@@ -74,6 +69,7 @@ public class Jeu {
     //enregistrer la partie
     public void enregistrer(Partie partie) {
         //yes
+
     }
 
     //mettre en pause la partie
@@ -86,15 +82,27 @@ public class Jeu {
 
     }
 
-    public void quitter(){}
+    public void sauvegarder(){
+        ObjectOutputStream out;
+        try {
+            out = new ObjectOutputStream(new BufferedOutputStream(new FileOutputStream(new File("jeu.dat"))));
+            out.writeObject(this);
+            //
+            out.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+    }
 
     public void setJoueur_courant(Joueur joueur_courant) {
         this.joueur_courant = joueur_courant;
     }
 
     public void ajouterPartieCourante(Partie partie_courante) {
+
         this.partie_courante = partie_courante;
-        this.parties.add(partie_courante);
+        this.joueur_courant.parties.add(this.partie_courante);
     }
 
     public Joueur getJoueur_courant() {
@@ -103,5 +111,9 @@ public class Jeu {
 
     public Partie getPartie_courante() {
         return partie_courante;
+    }
+
+    public void creerPartie(Joueur joueur) {
+
     }
 }

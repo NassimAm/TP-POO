@@ -6,9 +6,10 @@ import javafx.scene.image.ImageView;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.Serializable;
 import java.util.*;
 
-public class Partie {
+public class Partie implements Serializable {
     private boolean enCours;
     private boolean suspendu;
     private boolean enPause;
@@ -19,6 +20,11 @@ public class Partie {
     private Dé dé1;
     private Dé dé2;
     private Scene currentScene;
+
+    private int score;
+
+
+
 
     public Partie(Scene scene) {
         this.enCours = true;
@@ -33,6 +39,7 @@ public class Partie {
         this.plateau.genererPlateau(scene,this.definitions,this.images);
         //this.plateau.genererPlateauPerso(scene,this.definitions,this.images);
         this.currentScene = scene;
+        //this.id =
     }
 
     public void rechargerPartie(int joueur_position,Scene scene)

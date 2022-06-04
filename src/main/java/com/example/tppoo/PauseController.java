@@ -57,6 +57,19 @@ public class PauseController {
     @FXML
     void sauvegarder(ActionEvent event) {
 
+        Stage newStage = (Stage) save_button.getScene().getWindow();
+        try {
+            Parent newRoot = (new FXMLLoader(MainApplication.class.getResource("mainmenu-view.fxml"))).load();
+            Scene scene = new Scene(newRoot);
+            newStage.setScene(scene);
+            newStage.setTitle("MainMenu");
+            newStage.show();
+
+        }
+        catch (Exception e) {
+            e.printStackTrace();
+        }
+
     }
 
 }

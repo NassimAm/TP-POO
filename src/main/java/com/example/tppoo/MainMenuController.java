@@ -11,7 +11,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
 
-import java.io.IOException;
+import java.io.*;
 import java.util.Objects;
 
 public class MainMenuController {
@@ -54,6 +54,7 @@ public class MainMenuController {
             Partie partie = new Partie(scene);
             MainApplication.jeu.ajouterPartieCourante(partie);
 
+
             Label player_name = (Label) scene.lookup("#player_name_label");
             player_name.setText(MainApplication.jeu.getJoueur_courant().getNom());
             stage.setScene(scene);
@@ -64,6 +65,7 @@ public class MainMenuController {
 
     @FXML
     void quitter(ActionEvent event) {
+        MainApplication.jeu.sauvegarder();
         Platform.exit();
     }
 
