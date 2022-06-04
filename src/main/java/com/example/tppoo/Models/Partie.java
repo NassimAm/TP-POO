@@ -21,7 +21,6 @@ public class Partie {
     private Plateau plateau;
     private Dé dé1;
     private Dé dé2;
-    private Scene currentScene;
 
     public Partie(Scene scene) {
         this.enCours = true;
@@ -35,7 +34,6 @@ public class Partie {
         chargerDonnees("GameData.txt");
         this.plateau.genererPlateau(scene,this.definitions,this.images);
         //this.plateau.genererPlateauPerso(scene,this.definitions,this.images);
-        this.currentScene = scene;
     }
 
     public void rechargerPartie(int joueur_position,int prochaine_position,Scene scene)
@@ -70,7 +68,6 @@ public class Partie {
 
 
         this.plateau.chargerPlateauSurScene(joueur_position, scene);
-        this.currentScene = scene;
     }
 
     public int traiterPosition(int joueur_position,Scene scene) throws DestinationException
@@ -89,7 +86,6 @@ public class Partie {
                 }
         );
 
-        this.currentScene = scene;
 
         if(joueur_position == 99) {
             System.out.println("Vous avez fini la partie");
@@ -170,9 +166,5 @@ public class Partie {
 
     public Dé getDé2() {
         return dé2;
-    }
-
-    public Scene getCurrentScene() {
-        return currentScene;
     }
 }

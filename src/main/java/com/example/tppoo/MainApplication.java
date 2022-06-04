@@ -15,8 +15,10 @@ import java.io.IOException;
 
 public class MainApplication extends Application {
     public static Jeu jeu;
+    private static Stage stage;
     @Override
     public void start(Stage stage){
+        MainApplication.stage = stage;
         FXMLLoader fxmlLoader = new FXMLLoader(MainApplication.class.getResource("acceuil-view.fxml"));
         Scene scene = null;
         try
@@ -48,4 +50,6 @@ public class MainApplication extends Application {
     public static void main(String[] args) {
         launch();
     }
+
+    public static Stage getStage() {return stage;}
 }

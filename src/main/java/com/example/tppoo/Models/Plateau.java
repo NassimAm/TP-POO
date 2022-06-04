@@ -19,8 +19,17 @@ public class Plateau {
         //Case Bonus
         for(int i=0;i<5;i++)
         {
-            Random rand = new Random();
-            int position = rand.nextInt(nbCases-1)+1;
+            Boolean trouv = false;
+            int position = 0;
+            while(!trouv)
+            {
+                Random rand = new Random();
+                position = rand.nextInt(nbCases-1)+1;
+                if((cases[position] == null)&&(position != nbCases-2))
+                {
+                    trouv = true;
+                }
+            }
             cases[position] = new CaseBonus(position);
         }
         //Case Image
