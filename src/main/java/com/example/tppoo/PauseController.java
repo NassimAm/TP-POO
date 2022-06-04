@@ -1,6 +1,7 @@
 package com.example.tppoo;
 
 import com.example.tppoo.Models.Joueur;
+import com.example.tppoo.Models.Partie;
 import com.example.tppoo.Models.Plateau;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
@@ -44,7 +45,11 @@ public class PauseController {
 
             Scene scene = new Scene(newscene);
             Joueur joueur = MainApplication.jeu.getJoueur_courant();
-            MainApplication.jeu.getPartie_courante().rechargerPartie(joueur.getPosition(),joueur.getProchainePosition(),scene);
+            Partie partie_courante = MainApplication.jeu.getPartie_courante();
+            partie_courante.setJoueur_position(joueur.getPosition());
+            partie_courante.setProchaine_position(joueur.getProchainePosition());
+            partie_courante.setScore(joueur.getScore());
+            partie_courante.rechargerPartie(scene);
             stage.setScene(scene);
             stage.setTitle("English Game");
             stage.show();
@@ -65,6 +70,8 @@ public class PauseController {
             System.out.println("Couldn't load FXML file");
         }
 
+        MainApplication.jeu.sauvegarder();
+
         Button button = (Button) event.getSource();
         Stage stage = (Stage) button.getScene().getWindow();
         stage.setScene(scene);
@@ -78,6 +85,9 @@ public class PauseController {
         try {
             Parent newRoot = (new FXMLLoader(MainApplication.class.getResource("mainmenu-view.fxml"))).load();
             Scene scene = new Scene(newRoot);
+
+            MainApplication.jeu.sauvegarder();
+
             newStage.setScene(scene);
             newStage.setTitle("MainMenu");
             newStage.show();

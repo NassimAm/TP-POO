@@ -4,7 +4,7 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Joueur implements Serializable {
+public class Joueur implements Serializable,Comparable<Joueur> {
 
     private int id;
     private String nom;
@@ -13,10 +13,8 @@ public class Joueur implements Serializable {
     private int score;
     private int prochainePosition = 0;
 
-    private int nombreDePartie = 0;
-
     //nouveau
-    public ArrayList<Partie> parties = new ArrayList<Partie>(); //une liste des parties du meme joueur
+    private ArrayList<Partie> parties = new ArrayList<Partie>(); //une liste des parties du meme joueur
     public static int nbrJoueurs = 0;
     public Joueur(String nom)
     {
@@ -32,8 +30,11 @@ public class Joueur implements Serializable {
         this.position = position;
     }
 
-    public void setMeilleurScore(int meilleurScore) {
-        this.meilleurScore = meilleurScore;
+    public void setMeilleurScore(int score) {
+        if(score > meilleurScore)
+        {
+            this.meilleurScore = score;
+        }
     }
 
     //Deplacer le joueur sur le plateau
@@ -66,15 +67,15 @@ public class Joueur implements Serializable {
 
     public int getMeilleurScore()
     {
-        if(score > meilleurScore)
-        {
-            meilleurScore = score;
-        }
         return this.meilleurScore;
     }
 
     public int getPosition() {
         return position;
+    }
+
+    public void setScore(int score) {
+        this.score = score;
     }
 
     public int getScore() {
@@ -85,6 +86,7 @@ public class Joueur implements Serializable {
     {
         this.position = 0;
         this.score = 0;
+        this.prochainePosition = 0;
     }
 
     public int getProchainePosition() {
@@ -93,5 +95,19 @@ public class Joueur implements Serializable {
 
     public void setProchainePosition(int prochainePosition) {
         this.prochainePosition = prochainePosition;
+    }
+
+    public void ajouterPartie(Partie partie)
+    {
+        this.parties.add(partie);
+    }
+
+    public ArrayList<Partie> getParties() {
+        return parties;
+    }
+
+    @Override
+    public int compareTo(Joueur o) {
+        return -Integer.compare(this.meilleurScore,o.getMeilleurScore());
     }
 }

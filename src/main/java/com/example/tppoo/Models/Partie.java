@@ -13,25 +13,22 @@ import java.io.Serializable;
 import java.util.*;
 
 public class Partie implements Serializable {
-    private boolean enCours;
-    private boolean suspendu;
-    private boolean enPause;
-    private int id;
     private ArrayList<Image> images;
     private ArrayList<Definition> definitions;
     private Plateau plateau;
     private Dé dé1;
     private Dé dé2;
 
+    private int joueur_position;
+    private int prochaine_position;
     private int score;
 
+    private int id;
+    private static int nbParties = 0;
 
 
 
     public Partie(Scene scene) {
-        this.enCours = true;
-        this.enPause = false;
-        this.suspendu = false;
         this.plateau = new Plateau();
         this.dé1 = new Dé();
         this.dé2 = new Dé();
@@ -39,19 +36,22 @@ public class Partie implements Serializable {
         this.images = new ArrayList<Image>();
         chargerDonnees("GameData.txt");
         this.plateau.genererPlateau(scene,this.definitions,this.images);
+        this.id = nbParties;
+        nbParties++;
         //this.plateau.genererPlateauPerso(scene,this.definitions,this.images);
     }
 
-    public void rechargerPartie(int joueur_position,int prochaine_position,Scene scene)
+    public void rechargerPartie(Scene scene)
     {
+        Joueur joueur = MainApplication.jeu.getJoueur_courant();
         Label player_name = (Label) scene.lookup("#player_name_label");
-        player_name.setText(MainApplication.jeu.getJoueur_courant().getNom());
+        player_name.setText(joueur.getNom());
 
         Label score_label = (Label) scene.lookup("#score_label");
-        score_label.setText(Integer.toString(MainApplication.jeu.getJoueur_courant().getScore()));
+        score_label.setText(Integer.toString(score));
 
         Label position_label = (Label) scene.lookup("#position_label");
-        position_label.setText(Integer.toString(MainApplication.jeu.getJoueur_courant().getPosition()));
+        position_label.setText(Integer.toString(joueur_position));
 
         javafx.scene.image.Image image1 = new javafx.scene.image.Image(Objects.requireNonNull(MainApplication.class.getResourceAsStream("images/dice/dice" + Integer.toString(dé1.getValeur()) + ".png")));
         ImageView dice_image1 = (ImageView) scene.lookup("#dice_image1");
@@ -72,7 +72,9 @@ public class Partie implements Serializable {
             roll_button.setDisable(true);
         }
 
-
+        joueur.setPosition(joueur_position);
+        joueur.setProchainePosition(prochaine_position);
+        joueur.setScore(score);
         this.plateau.chargerPlateauSurScene(joueur_position, scene);
     }
 
@@ -98,15 +100,6 @@ public class Partie implements Serializable {
             System.out.println("Score : "+Integer.toString(MainApplication.jeu.getJoueur_courant().getScore()));
         }
         return joueur_position;
-    }
-
-    public void setEnPause(boolean enPause) {
-        this.enPause = enPause;
-    }
-
-    public void setId(int id)
-    {
-        this.id = id;
     }
 
     //charger les images, mots, definitions du fichier ou ils sont stockés
@@ -138,22 +131,6 @@ public class Partie implements Serializable {
         this.plateau = plateau;
     }
 
-    public boolean isEnCours() {
-        return enCours;
-    }
-
-    public boolean isSuspendu() {
-        return suspendu;
-    }
-
-    public boolean isEnPause() {
-        return enPause;
-    }
-
-    public int getId() {
-        return id;
-    }
-
     public ArrayList<Image> getImages() {
         return images;
     }
@@ -172,5 +149,21 @@ public class Partie implements Serializable {
 
     public Dé getDé2() {
         return dé2;
+    }
+
+    public void setJoueur_position(int joueur_position) {
+        this.joueur_position = joueur_position;
+    }
+
+    public void setProchaine_position(int prochaine_position) {
+        this.prochaine_position = prochaine_position;
+    }
+
+    public void setScore(int score) {
+        this.score = score;
+    }
+
+    public int getId() {
+        return id;
     }
 }

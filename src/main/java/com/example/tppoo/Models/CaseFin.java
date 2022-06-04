@@ -46,10 +46,11 @@ public class CaseFin extends Case {
                     stage.setTitle("End Game");
 
                     Label score_label = (Label)scene.lookup("#score_label");
-                    score_label.setText(Integer.toString(MainApplication.jeu.getJoueur_courant().getScore()));
+                    score_label.setText(Integer.toString(joueur.getScore()));
 
                     Label meilleur_score_label = (Label)scene.lookup("#meilleur_score_label");
-                    meilleur_score_label.setText(Integer.toString(MainApplication.jeu.getJoueur_courant().getMeilleurScore()));
+                    joueur.setMeilleurScore(joueur.getScore());
+                    meilleur_score_label.setText(Integer.toString(joueur.getMeilleurScore()));
 
                     stage.getIcons().add(new Image(String.valueOf(MainApplication.class.getResource("icon/Peak_Logo_Icon.png"))));
                     stage.setScene(scene);

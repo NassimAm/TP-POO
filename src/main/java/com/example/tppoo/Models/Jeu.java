@@ -32,17 +32,17 @@ public class Jeu implements Serializable {
     {
 
         //chargerJoueurs("Joueurs");
-       for (int i =0; i < this.joueurs.size();i++) {
-            System.out.println(this.joueurs.get(i).getNom());
+       for (Joueur joueur:joueurs) {
+            System.out.println(joueur.getNom());
         }
         if(identifierJoueur(nom)) //si le joueur existe
         {
             System.out.println(nom + " a ete indentifie avec succes");
             //charger ses parties
             //initialiser le joueur courant
-            for (int i=0; i < this.joueurs.size(); i++) {
-                if (this.joueurs.get(i).getNom().equals(nom)) {
-                    this.joueur_courant = this.joueurs.get(i);
+            for (Joueur joueur: joueurs) {
+                if (joueur.getNom().equals(nom)) {
+                    this.joueur_courant = joueur;
                 }
             }
         }
@@ -72,17 +72,16 @@ public class Jeu implements Serializable {
 
     }
 
-    //mettre en pause la partie
-    public void pauser(Partie partie) {
-        partie.setEnPause(true);
-    }
-
     //reprendre la partie
     public void reprendre(Partie partie) {
 
     }
 
     public void sauvegarder(){
+        this.partie_courante.setScore(this.joueur_courant.getScore());
+        this.partie_courante.setJoueur_position(this.joueur_courant.getPosition());
+        this.partie_courante.setProchaine_position(this.joueur_courant.getProchainePosition());
+
         ObjectOutputStream out;
         try {
             out = new ObjectOutputStream(new BufferedOutputStream(new FileOutputStream(new File("jeu.dat"))));
@@ -102,7 +101,7 @@ public class Jeu implements Serializable {
     public void ajouterPartieCourante(Partie partie_courante) {
 
         this.partie_courante = partie_courante;
-        this.joueur_courant.parties.add(this.partie_courante);
+        this.joueur_courant.ajouterPartie(this.partie_courante);
     }
 
     public Joueur getJoueur_courant() {
@@ -113,7 +112,11 @@ public class Jeu implements Serializable {
         return partie_courante;
     }
 
-    public void creerPartie(Joueur joueur) {
+    public void setPartie_courante(Partie partie_courante) {
+        this.partie_courante = partie_courante;
+    }
 
+    public ArrayList<Joueur> getJoueurs() {
+        return joueurs;
     }
 }

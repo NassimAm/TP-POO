@@ -178,8 +178,6 @@
         #d6d6d6,
         radial-gradient(center 50% 50%, radius 100%, #d6d6d6, #c4c4c4);
     -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
-    -fx-font-weight: bold;
-    -fx-font-size: 1.1em;
 }
 
 .case-standard:hover {
@@ -567,4 +565,29 @@
 /*Bg Page3*/
 .bg_page3{
     -fx-background-image: url('../images/mountain_bg3.png');
+}
+
+/*Scroll Pane*/
+.scroll-pane > .viewport {
+    -fx-background-color: transparent;
+ }
+
+ /*Player ShowCase*/
+ .player-label{
+    -fx-background-radius: 8;
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #F29100 0%, #cb7b02 100%),
+        #b55903,
+        #e67002,
+        radial-gradient(center 50% 50%, radius 40%, #e88b01, #db6a00);
+    -fx-effect: dropshadow( gaussian , rgba(40,48,110,0.75) , 4,0,0,1 );
+}
+
+.player-score{
+    -fx-background-radius: 10;
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #e2e2e2 0%, #bcbcbc 100%),
+        #b0b0b0,
+        #e7e7e7,
+        radial-gradient(center 50% 50%, radius 40%, #f7f7f7, #e0e0e0);
 }
