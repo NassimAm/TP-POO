@@ -1,5 +1,8 @@
 package com.example.tppoo.Models;
-public abstract class Case {
+
+import java.io.Serializable;
+
+public abstract class Case implements Serializable {
 
     private Couleur couleur;
     private int numero;

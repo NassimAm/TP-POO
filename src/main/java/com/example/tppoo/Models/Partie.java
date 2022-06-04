@@ -9,9 +9,10 @@ import javafx.scene.layout.HBox;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.Serializable;
 import java.util.*;
 
-public class Partie {
+public class Partie implements Serializable {
     private boolean enCours;
     private boolean suspendu;
     private boolean enPause;
@@ -21,6 +22,11 @@ public class Partie {
     private Plateau plateau;
     private Dé dé1;
     private Dé dé2;
+
+    private int score;
+
+
+
 
     public Partie(Scene scene) {
         this.enCours = true;

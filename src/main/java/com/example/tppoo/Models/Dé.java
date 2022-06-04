@@ -1,7 +1,8 @@
 package com.example.tppoo.Models;
+import java.io.Serializable;
 import java.util.Random;
 
-public class Dé{
+public class Dé implements Serializable {
 
     private final int max = 6;
     private int current = 1;

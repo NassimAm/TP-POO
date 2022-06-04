@@ -11,7 +11,7 @@ import javafx.scene.image.Image;
 import javafx.scene.layout.FlowPane;
 import javafx.stage.Stage;
 
-import java.io.IOException;
+import java.io.*;
 
 public class MainApplication extends Application {
     public static Jeu jeu;
@@ -31,8 +31,22 @@ public class MainApplication extends Application {
             System.out.println("Couldn't load FXML file");
         }
 
+        ObjectInputStream in;
+        try {
+            in = new ObjectInputStream(new BufferedInputStream(new FileInputStream(new File("jeu.dat"))));
+            try {
+                jeu = (Jeu)in.readObject();
+                in.close();
+            } catch (ClassNotFoundException e) {
+                e.printStackTrace();
+            }
+        }
+        catch (FileNotFoundException e) {
+            jeu = new Jeu();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
-        jeu = new Jeu();
         Dé dé1 = new Dé();
         Dé dé2 = new Dé();
 

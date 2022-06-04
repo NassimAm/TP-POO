@@ -7,8 +7,9 @@ import javafx.scene.control.Button;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.VBox;
 
+import java.io.Serializable;
 import java.util.*;
-public class Plateau {
+public class Plateau implements Serializable {
     public final int nbCases = 100; //le nombre total de cases dans le plateau
     private Case cases[] = new Case[nbCases];
 

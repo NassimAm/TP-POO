@@ -1,5 +1,10 @@
 package com.example.tppoo.Models;
-public class Joueur {
+
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
+
+public class Joueur implements Serializable {
 
     private int id;
     private String nom;
@@ -8,11 +13,19 @@ public class Joueur {
     private int score;
     private int prochainePosition = 0;
 
+    private int nombreDePartie = 0;
+
+    //nouveau
+    public ArrayList<Partie> parties = new ArrayList<Partie>(); //une liste des parties du meme joueur
+    public static int nbrJoueurs = 0;
     public Joueur(String nom)
     {
+        nbrJoueurs++;
+        this.id=0;
         this.nom = nom;
         this.position = 0;
         this.score = 0;
+        this.meilleurScore = 0;
     }
     public void setPosition(int position)
     {

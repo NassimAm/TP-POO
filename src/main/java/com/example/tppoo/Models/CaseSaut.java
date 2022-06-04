@@ -1,4 +1,5 @@
 package com.example.tppoo.Models;
+import java.io.Serializable;
 import java.util.Random;
 
 public class CaseSaut extends Case {
