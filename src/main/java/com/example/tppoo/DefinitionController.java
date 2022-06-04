@@ -54,12 +54,16 @@ public class DefinitionController {
                     }
 
                     button = (Button)scene.lookup("#case"+Integer.toString(save_position));
-                    button.getStyleClass().clear();
-                    button.getStyleClass().add(MainApplication.jeu.getPartie_courante().getPlateau().getClassNameFromCouleur(MainApplication.jeu.getPartie_courante().getPlateau().getCases()[save_position].getCouleur()));
+                    Button finalButton = button;
+                    Platform.runLater(
+                            () -> {
+                                finalButton.setGraphic(null);
+                            }
+                    );
 
                     int joueur_position = 0;
                     try {
-                        joueur_position = MainApplication.jeu.getPartie_courante().traiterPosition(joueur.getPosition(),joueur.getA_clique(),joueur.getCase_clique(),scene);
+                        joueur_position = MainApplication.jeu.getPartie_courante().traiterPosition(joueur.getPosition(),scene);
                     } catch (DestinationException e) {
                         throw new RuntimeException(e);
                     }
@@ -84,6 +88,7 @@ public class DefinitionController {
                             }
                     );
                 }
+                joueur.setProchainePosition(joueur.getPosition());
             }
         };
 

@@ -9,9 +9,9 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tppoo.DefinitionController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" styleClass="bg_page3" stylesheets="@css/style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tppoo.DefinitionController">
     <center>
-        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #BBBBBB;" BorderPane.alignment="CENTER">
+        <VBox alignment="CENTER" style="-fx-background-color: rgb(40,48,110,0.8); -fx-background-radius: 15;" BorderPane.alignment="CENTER">
             <children>
                 <HBox alignment="CENTER" maxWidth="-Infinity" prefHeight="80.0" prefWidth="550.0" style="-fx-border-color: #FFFFFF; -fx-border-width: 5; -fx-border-style: hidden hidden solid hidden;">
                     <VBox.margin>
@@ -25,7 +25,7 @@
                         </Label>
                     </children>
                 </HBox>
-            <Label text="Enter the word in english that fits the definition below">
+            <Label text="Enter the word in english that fits the definition below" textFill="WHITE">
                <font>
                   <Font name="Yu Gothic Regular" size="20.0" />
                </font>
@@ -33,7 +33,7 @@
                   <Insets bottom="10.0" top="10.0" />
                </VBox.margin>
             </Label>
-            <HBox alignment="CENTER" maxWidth="550.0" style="-fx-background-color: #EEEEEE; -fx-background-radius: 15;">
+            <HBox alignment="CENTER" maxWidth="-Infinity" style="-fx-background-color: rgb(242,145,0,0.8); -fx-background-radius: 15;">
                <children>
                   <Label id="definition_label" fx:id="definition_label" text="The definition" textAlignment="CENTER" wrapText="true">
                      <font>
@@ -61,7 +61,7 @@
                   <Insets bottom="10.0" />
                </VBox.margin>
             </TextField>
-                <Button fx:id="submit_button" mnemonicParsing="false" onAction="#submit" styleClass="pause-buttons" stylesheets="@css/style.css" text="          Submit           ">
+                <Button fx:id="submit_button" mnemonicParsing="false" onAction="#submit" styleClass="pause-button3" stylesheets="@css/style.css" text="          Submit           ">
                     <padding>
                         <Insets bottom="20.0" left="200.0" right="200.0" top="20.0" />
                     </padding>
@@ -76,6 +76,9 @@
             <BorderPane.margin>
                 <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
             </BorderPane.margin>
+         <padding>
+            <Insets bottom="10.0" top="10.0" />
+         </padding>
         </VBox>
     </center>
 </BorderPane>

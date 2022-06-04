@@ -1,5 +1,6 @@
 package com.example.tppoo;
 
+import com.example.tppoo.Models.Joueur;
 import com.example.tppoo.Models.Plateau;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
@@ -42,7 +43,8 @@ public class PauseController {
             }
 
             Scene scene = new Scene(newscene);
-            MainApplication.jeu.getPartie_courante().rechargerPartie(MainApplication.jeu.getJoueur_courant().getPosition(),scene);
+            Joueur joueur = MainApplication.jeu.getJoueur_courant();
+            MainApplication.jeu.getPartie_courante().rechargerPartie(joueur.getPosition(),joueur.getProchainePosition(),scene);
             stage.setScene(scene);
             stage.setTitle("English Game");
             stage.show();
@@ -51,7 +53,22 @@ public class PauseController {
 
     @FXML
     void quitter(ActionEvent event) {
-        Platform.exit();
+        FXMLLoader fxmlLoader = new FXMLLoader(MainApplication.class.getResource("mainmenu-view.fxml"));
+        Scene scene = null;
+        try
+        {
+            scene = new Scene(fxmlLoader.load());
+        }
+        catch(IOException e)
+        {
+            e.printStackTrace();
+            System.out.println("Couldn't load FXML file");
+        }
+
+        Button button = (Button) event.getSource();
+        Stage stage = (Stage) button.getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
     }
 
     @FXML

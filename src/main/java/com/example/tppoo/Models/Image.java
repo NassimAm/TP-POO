@@ -1,5 +1,8 @@
 package com.example.tppoo.Models;
-public class Image {
+
+import java.io.Serializable;
+
+public class Image implements Serializable {
     private String lien;
     private String mot;
 

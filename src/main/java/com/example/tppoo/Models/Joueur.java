@@ -9,11 +9,9 @@ public class Joueur implements Serializable {
     private int id;
     private String nom;
     private int meilleurScore = 0;
-
-    private int position = 0; //peut etre position leaderboard
-    private int score; //peut etre f la partie
-    private int case_clique = 0;
-    private boolean a_clique = false;
+    private int position = 0;
+    private int score;
+    private int prochainePosition = 0;
 
     private int nombreDePartie = 0;
 
@@ -51,12 +49,6 @@ public class Joueur implements Serializable {
         return désValeurs;
     }
 
-    //retourner le numero de case cliquée
-    public void cliquerCase(int numero) {
-        case_clique = numero;
-        a_clique = true;
-    }
-
     //ajouter "points" au score courant
     public void ajouterPoints(int points) {
         this.score += points;
@@ -89,19 +81,17 @@ public class Joueur implements Serializable {
         return score;
     }
 
-    public int getCase_clique() {
-        return case_clique;
-    }
-
-    public boolean getA_clique() {
-        return a_clique;
-    }
-
     public void reset()
     {
         this.position = 0;
         this.score = 0;
-        this.case_clique = 0;
-        this.a_clique = false;
+    }
+
+    public int getProchainePosition() {
+        return prochainePosition;
+    }
+
+    public void setProchainePosition(int prochainePosition) {
+        this.prochainePosition = prochainePosition;
     }
 }

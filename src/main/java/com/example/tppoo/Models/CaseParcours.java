@@ -1,4 +1,7 @@
 package com.example.tppoo.Models;
+
+import java.io.Serializable;
+
 public class CaseParcours extends Case {
     CaseParcours(int numero)
     {

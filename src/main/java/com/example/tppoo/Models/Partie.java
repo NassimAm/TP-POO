@@ -1,8 +1,11 @@
 package com.example.tppoo.Models;
 import com.example.tppoo.MainApplication;
+import javafx.application.Platform;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
+import javafx.scene.layout.HBox;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -19,7 +22,6 @@ public class Partie implements Serializable {
     private Plateau plateau;
     private Dé dé1;
     private Dé dé2;
-    private Scene currentScene;
 
     private int score;
 
@@ -38,11 +40,9 @@ public class Partie implements Serializable {
         chargerDonnees("GameData.txt");
         this.plateau.genererPlateau(scene,this.definitions,this.images);
         //this.plateau.genererPlateauPerso(scene,this.definitions,this.images);
-        this.currentScene = scene;
-        //this.id =
     }
 
-    public void rechargerPartie(int joueur_position,Scene scene)
+    public void rechargerPartie(int joueur_position,int prochaine_position,Scene scene)
     {
         Label player_name = (Label) scene.lookup("#player_name_label");
         player_name.setText(MainApplication.jeu.getJoueur_courant().getNom());
@@ -60,11 +60,23 @@ public class Partie implements Serializable {
         ImageView dice_image2 = (ImageView) scene.lookup("#dice_image2");
         dice_image2.setImage(image2);
 
+        if(joueur_position != prochaine_position)
+        {
+            HBox hint_container = (HBox) scene.lookup("#hint_container");
+            hint_container.setVisible(true);
+
+            Label hint_text = (Label) scene.lookup("#hint_text");
+            hint_text.setText("Click on the case N°"+Integer.toString(prochaine_position));
+
+            Button roll_button = (Button) scene.lookup("#roll_button");
+            roll_button.setDisable(true);
+        }
+
+
         this.plateau.chargerPlateauSurScene(joueur_position, scene);
-        this.currentScene = scene;
     }
 
-    public int traiterPosition(int joueur_position,boolean a_clique,int numero_clique,Scene scene) throws DestinationException
+    public int traiterPosition(int joueur_position,Scene scene) throws DestinationException
     {
         boolean auto = false;
         if(joueur_position>=100)
@@ -73,10 +85,13 @@ public class Partie implements Serializable {
             auto = true;
         }
 
-        var button = scene.lookup("#case"+Integer.toString(joueur_position));
-        button.getStyleClass().clear();
-        button.getStyleClass().add(this.plateau.getJoueurClassNameFromCouleur(this.plateau.getCases()[joueur_position].getCouleur()));
-        this.currentScene = scene;
+        var button = (Button)scene.lookup("#case"+Integer.toString(joueur_position));
+        Platform.runLater(
+                () -> {
+                    button.setGraphic(this.getPlateau().generateJoueurImage());
+                }
+        );
+
 
         if(joueur_position == 99) {
             System.out.println("Vous avez fini la partie");
@@ -157,9 +172,5 @@ public class Partie implements Serializable {
 
     public Dé getDé2() {
         return dé2;
-    }
-
-    public Scene getCurrentScene() {
-        return currentScene;
     }
 }

@@ -1,5 +1,8 @@
 package com.example.tppoo.Models;
-public class Definition {
+
+import java.io.Serializable;
+
+public class Definition implements Serializable {
     private String definition;
     private String mot;
 

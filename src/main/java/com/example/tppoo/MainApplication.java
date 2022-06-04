@@ -7,6 +7,7 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.ButtonBar;
+import javafx.scene.image.Image;
 import javafx.scene.layout.FlowPane;
 import javafx.stage.Stage;
 
@@ -14,9 +15,11 @@ import java.io.*;
 
 public class MainApplication extends Application {
     public static Jeu jeu;
+    private static Stage stage;
     @Override
     public void start(Stage stage){
-        FXMLLoader fxmlLoader = new FXMLLoader(MainApplication.class.getResource("login-view.fxml"));
+        MainApplication.stage = stage;
+        FXMLLoader fxmlLoader = new FXMLLoader(MainApplication.class.getResource("acceuil-view.fxml"));
         Scene scene = null;
         try
         {
@@ -52,6 +55,7 @@ public class MainApplication extends Application {
 
 
         //jeu.jouer();
+        stage.getIcons().add(new Image(String.valueOf(MainApplication.class.getResource("icon/Peak_Logo_Icon.png"))));
         stage.setTitle("Login");
         stage.setScene(scene);
         stage.show();
@@ -60,4 +64,6 @@ public class MainApplication extends Application {
     public static void main(String[] args) {
         launch();
     }
+
+    public static Stage getStage() {return stage;}
 }

@@ -10,6 +10,7 @@ import javafx.geometry.VPos;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
 import javafx.scene.layout.FlowPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.text.Font;
@@ -50,9 +51,10 @@ public class CaseFin extends Case {
                     Label meilleur_score_label = (Label)scene.lookup("#meilleur_score_label");
                     meilleur_score_label.setText(Integer.toString(MainApplication.jeu.getJoueur_courant().getMeilleurScore()));
 
+                    stage.getIcons().add(new Image(String.valueOf(MainApplication.class.getResource("icon/Peak_Logo_Icon.png"))));
                     stage.setScene(scene);
 
-                    stage.initOwner(MainApplication.jeu.getPartie_courante().getCurrentScene().getWindow());
+                    stage.initOwner(MainApplication.getStage());
                     stage.initModality(Modality.WINDOW_MODAL);
 
                     stage.show();

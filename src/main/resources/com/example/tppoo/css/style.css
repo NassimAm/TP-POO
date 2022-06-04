@@ -20,6 +20,7 @@
         #9d4024,
         #d86e3a,
         radial-gradient(center 50% 50%, radius 100%, #ea7f4b, #c54e2c);
+    -fx-cursor: hand;
 }
 .case-rouge:pressed {
     -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
@@ -47,6 +48,7 @@
         #409d24,
         #54d83a,
         radial-gradient(center 50% 50%, radius 100%, #70ea4b, #57c52c);
+    -fx-cursor: hand;
 }
 .case-verte:pressed {
     -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
@@ -74,6 +76,7 @@
         #9d9b24,
         #d8cd3a,
         radial-gradient(center 50% 50%, radius 100%,#eae74b, #c5c32c);
+    -fx-cursor: hand;
 }
 .case-jaune:pressed {
     -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
@@ -101,6 +104,7 @@
         #b66e2b,
         #e7903e,
         radial-gradient(center 50% 50%, radius 100%,#fd9f52, #da822f);
+    -fx-cursor: hand;
 }
 .case-orange:pressed {
     -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
@@ -128,6 +132,7 @@
         #24369d,
         #3a45d8,
         radial-gradient(center 50% 50%, radius 100%, #4b5bea, #2c36c5);
+    -fx-cursor: hand
 }
 .case-bleue:pressed {
     -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
@@ -155,6 +160,7 @@
         #9d247f,
         #d83aa9,
         radial-gradient(center 50% 50%, radius 100%, #ea4bba, #c52c97);
+    -fx-cursor: hand
 }
 .case-rose:pressed {
     -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
@@ -182,6 +188,7 @@
         #9b9b9b,
         #d6d6d6,
         radial-gradient(center 50% 50%, radius 100%, #ebebeb, #c4c4c4);
+    -fx-cursor: hand
 }
 .case-standard:pressed {
     -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
@@ -209,6 +216,7 @@
         #535353,
         #888888,
         radial-gradient(center 50% 50%, radius 100%, #a1a1a1, #747474);
+    -fx-cursor: hand
 }
 .case-noire:pressed {
     -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
@@ -409,7 +417,6 @@
         radial-gradient(center 50% 50%, radius 50%, #000000, #c4c4c4);
     -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
 }
-
 /*Roll Button ======================================================================*/
 
 .roll-button{
@@ -461,6 +468,58 @@
     -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
 }
 
+/*Pause Button2===================================================*/
+
+.pause-button2{
+    
+    -fx-background-insets: 0,0 0 5 0, 0 0 6 0, 0 0 7 0;
+    -fx-background-radius: 8;
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #28306E 0%, #384398 100%),
+        #303c95,
+        #3643a3,
+        radial-gradient(center 50% 50%, radius 40%, #3749d1, #3846b0);
+    -fx-effect: dropshadow( gaussian , rgba(40,48,110,0.75) , 4,0,0,1 );
+}
+
+.pause-button2:hover {
+    -fx-cursor: hand;
+}
+.pause-button2:pressed {
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #28306E 0%, #384398 100%),
+        #303c95,
+        #3643a3,
+        radial-gradient(center 50% 50%, radius 40%, #394eed, #3846b0);
+    -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
+}
+
+/*Pause Button3===================================================*/
+
+.pause-button3{
+    
+    -fx-background-insets: 0,0 0 5 0, 0 0 6 0, 0 0 7 0;
+    -fx-background-radius: 8;
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #F29100 0%, #cb7b02 100%),
+        #b55903,
+        #e67002,
+        radial-gradient(center 50% 50%, radius 40%, #e88b01, #db6a00);
+    -fx-effect: dropshadow( gaussian , rgba(40,48,110,0.75) , 4,0,0,1 );
+}
+
+.pause-button3:hover {
+    -fx-cursor: hand;
+}
+.pause-button3:pressed {
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #F29100 0%, #cb7b02 100%),
+        #b55903,
+        #e67002,
+        radial-gradient(center 50% 50%, radius 40%, #ff9900, #db6a00);
+    -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
+}
+
 /*Pause Buttons*/
 /*Case standard ===================================================*/
 
@@ -493,4 +552,19 @@
     -fx-cursor: hand;
     -fx-background-color: #eeeeee65;
     -fx-background-radius: 15;
+}
+
+/*Bg Page1*/
+.bg_page1{
+    -fx-background-image: url('../images/mountain_bg1.png');
+}
+
+/*Bg Page2*/
+.bg_page2{
+    -fx-background-image: url('../images/mountain_bg2.jpg');
+}
+
+/*Bg Page3*/
+.bg_page3{
+    -fx-background-image: url('../images/mountain_bg3.png');
 }

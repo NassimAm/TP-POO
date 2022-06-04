@@ -1,8 +1,15 @@
 package com.example.tppoo.Models;
+import com.example.tppoo.MainApplication;
+import javafx.geometry.Insets;
+import javafx.geometry.Pos;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.image.ImageView;
+import javafx.scene.layout.VBox;
 
+import java.io.Serializable;
 import java.util.*;
-public class Plateau {
+public class Plateau implements Serializable {
     public final int nbCases = 100; //le nombre total de cases dans le plateau
     private Case cases[] = new Case[nbCases];
 
@@ -13,8 +20,17 @@ public class Plateau {
         //Case Bonus
         for(int i=0;i<5;i++)
         {
-            Random rand = new Random();
-            int position = rand.nextInt(nbCases-1)+1;
+            Boolean trouv = false;
+            int position = 0;
+            while(!trouv)
+            {
+                Random rand = new Random();
+                position = rand.nextInt(nbCases-1)+1;
+                if((cases[position] == null)&&(position != nbCases-2))
+                {
+                    trouv = true;
+                }
+            }
             cases[position] = new CaseBonus(position);
         }
         //Case Image
@@ -126,13 +142,13 @@ public class Plateau {
         //Generer son interface ==================================================
         for(int i=0;i<this.nbCases;i++)
         {
-            var button = scene.lookup("#case"+Integer.toString(i));
+            var button = (Button)scene.lookup("#case"+Integer.toString(i));
             //System.out.println(plateau.cases[i].getCouleur());
             button.getStyleClass().clear();
+            button.getStyleClass().add(getClassNameFromCouleur(this.cases[i].getCouleur()));
             if(i == position_joueur)
-                button.getStyleClass().add(getJoueurClassNameFromCouleur(this.cases[i].getCouleur()));
-            else
-                button.getStyleClass().add(getClassNameFromCouleur(this.cases[i].getCouleur()));
+                button.setGraphic(generateJoueurImage());
+
         }
     }
 
@@ -166,7 +182,24 @@ public class Plateau {
         }
     }
 
-    public String getJoueurClassNameFromCouleur(Couleur couleur)
+    public VBox generateJoueurImage()
+    {
+        VBox vbox = new VBox();
+        ImageView imageview = new ImageView();
+        imageview.setFitHeight(49.0);
+        imageview.setFitWidth(33.0);
+        imageview.setPickOnBounds(true);
+        imageview.setPreserveRatio(true);
+        javafx.scene.image.Image image = new javafx.scene.image.Image(String.valueOf(MainApplication.class.getResource("images/Golden_star.svg.png")));
+        imageview.setImage(image);
+        vbox.setAlignment(Pos.CENTER);
+        vbox.setPadding(new Insets(0,0,5,0));
+        vbox.getChildren().add(imageview);
+
+        return vbox;
+    }
+
+    /*public String getJoueurClassNameFromCouleur(Couleur couleur)
     {
         switch(couleur) {
             case JAUNE: {
@@ -194,7 +227,7 @@ public class Plateau {
                 return "case-standard-joueur";
             }
         }
-    }
+    }*/
 
     public void genererPlateauPerso(Scene scene,ArrayList<Definition> definitions,ArrayList<Image> images)
     {
