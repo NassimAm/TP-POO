@@ -12,6 +12,8 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.HBox;
+import javafx.scene.paint.Color;
+import javafx.scene.paint.Paint;
 import javafx.stage.Stage;
 
 public class DefinitionController {
@@ -40,11 +42,29 @@ public class DefinitionController {
             public void run(){
 
                 int save_position = joueur.getPosition();
-                case_definition.verifierReponse(input_answer.getText().substring(0,word_hint.getChildren().size()),joueur);
+                boolean reponse = case_definition.verifierReponse(input_answer.getText().substring(0,word_hint.getChildren().size()),joueur);
 
                 Button button;
                 Label score_label = (Label) scene.lookup("#score_label");
                 Label position_label = (Label) scene.lookup("#position_label");
+                Label hint_text = (Label) scene.lookup("#hint_text");
+                HBox hint_container = (HBox) scene.lookup("#hint_container");
+                Platform.runLater(
+                        () -> {
+                            if(reponse)
+                            {
+                                hint_text.setText("Good Answer !");
+                                hint_text.setTextFill(Color.GREEN);
+                            }
+                            else
+                            {
+                                hint_text.setText("Wrong Answer !");
+                                hint_text.setTextFill(Color.RED);
+                            }
+                        }
+                );
+                hint_container.setVisible(true);
+
                 while(joueur.getPosition() != save_position)
                 {
                     try {

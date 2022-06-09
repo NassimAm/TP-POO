@@ -125,6 +125,7 @@ public class MainMenuController {
 
     @FXML
     void quitter(ActionEvent event) {
+        MainApplication.jeu.sauvegarder();
         Platform.exit();
     }
 

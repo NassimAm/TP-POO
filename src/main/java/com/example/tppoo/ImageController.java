@@ -10,6 +10,8 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.FlowPane;
+import javafx.scene.layout.HBox;
+import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
 public class ImageController {
@@ -61,11 +63,28 @@ public class ImageController {
             public void run(){
 
                 int save_position = joueur.getPosition();
-                case_image.verifierReponse(index,joueur);
+                boolean reponse = case_image.verifierReponse(index,joueur);
 
                 Button button;
                 Label score_label = (Label) scene.lookup("#score_label");
                 Label position_label = (Label) scene.lookup("#position_label");
+                Label hint_text = (Label) scene.lookup("#hint_text");
+                HBox hint_container = (HBox) scene.lookup("#hint_container");
+                Platform.runLater(
+                        () -> {
+                            if(reponse)
+                            {
+                                hint_text.setText("Good Answer !");
+                                hint_text.setTextFill(Color.GREEN);
+                            }
+                            else
+                            {
+                                hint_text.setText("Wrong Answer !");
+                                hint_text.setTextFill(Color.RED);
+                            }
+                        }
+                );
+                hint_container.setVisible(true);
                 while(joueur.getPosition() != save_position)
                 {
                     try {

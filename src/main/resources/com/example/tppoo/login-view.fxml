@@ -42,7 +42,7 @@
                   <Insets bottom="10.0" top="10.0" />
                </VBox.margin>
             </TextField>
-                <Button fx:id="login_play_button" mnemonicParsing="false" onAction="#login_play" styleClass="pause-button3" stylesheets="@css/style.css" text="PLAY">
+                <Button fx:id="login_play_button" defaultButton="true" mnemonicParsing="false" onAction="#login_play" styleClass="pause-button3" stylesheets="@css/style.css" text="PLAY">
                     <padding>
                         <Insets bottom="20.0" left="200.0" right="200.0" top="20.0" />
                     </padding>

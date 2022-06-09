@@ -44,7 +44,6 @@ public class Partie implements Serializable {
     public void rechargerPartie(Scene scene)
     {
         Joueur joueur = MainApplication.jeu.getJoueur_courant();
-        int prochaine_position = joueur.getProchainePosition();
         Label player_name = (Label) scene.lookup("#player_name_label");
         player_name.setText(joueur.getNom());
 

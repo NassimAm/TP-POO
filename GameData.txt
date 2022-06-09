@@ -2,7 +2,7 @@ D mouse A little animal that loves cheese
 D horse Very fast, Strong legs, but most importantly a good friend
 D screwdriver A very useful tool that you will need anytime you want to fix something
 D car An invention made to replace horses in transport
-D software Devices that can be connected to computers
+D software A word used to describe a computer program
 D browser A program for exploring the Web and viewing websites
 D stallion A fully-grown male horse
 D peak The highest point of a mountain

@@ -1,5 +1,7 @@
 package com.example.tppoo;
 
+import com.example.tppoo.Models.Joueur;
+import com.example.tppoo.Models.Partie;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -42,7 +44,10 @@ public class EndController {
         stage.setTitle("Main Menu");
 
         substage.close();
-        MainApplication.jeu.getJoueur_courant().reset();
+        Joueur joueur = MainApplication.jeu.getJoueur_courant();
+        Partie partie_courante = MainApplication.jeu.getPartie_courante();
+        joueur.reset();
+        joueur.getParties().remove(partie_courante);
 
         stage.show();
     }

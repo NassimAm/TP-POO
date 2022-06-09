@@ -15,6 +15,7 @@ import java.io.*;
 
 public class MainApplication extends Application {
     public static Jeu jeu;
+    private static boolean testmode = false;
     private static Stage stage;
     @Override
     public void start(Stage stage){
@@ -61,9 +62,25 @@ public class MainApplication extends Application {
         stage.show();
     }
 
+    @Override
+    public void stop()
+    {
+        jeu.sauvegarder();
+    }
+
     public static void main(String[] args) {
         launch();
     }
 
     public static Stage getStage() {return stage;}
+
+    public static boolean getTestMode()
+    {
+        return testmode;
+    }
+
+    public static void setTestMode(boolean b)
+    {
+        testmode = b;
+    }
 }

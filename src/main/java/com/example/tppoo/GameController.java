@@ -12,6 +12,7 @@ import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.HBox;
+import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
 import java.io.File;
@@ -48,36 +49,41 @@ public class GameController {
         Dé dé2 = MainApplication.jeu.getPartie_courante().getDé2();
         int save_position = joueur.getPosition();
 
-        /*if((button_pos == joueur.getProchainePosition())&&(button_pos != joueur.getPosition()))
+        if(!MainApplication.getTestMode())
         {
-            button.getStyleClass().clear();
-            Partie partie_courante = MainApplication.jeu.getPartie_courante();
-            Case case_courante = partie_courante.getPlateau().getCases()[button_pos];
-            button.getStyleClass().add(partie_courante.getPlateau().getClassNameFromCouleur(case_courante.getCouleur()));
-            hint_container.setVisible(false);
-            updateJoueur(dé1,dé2,save_position,dé1.getValeur()+ dé2.getValeur(),joueur);
-            joueur.setProchainePosition(joueur.getPosition());
-            roll_button.setDisable(false);
+            if((button_pos == joueur.getProchainePosition())&&(button_pos != joueur.getPosition()))
+            {
+                button.getStyleClass().clear();
+                Partie partie_courante = MainApplication.jeu.getPartie_courante();
+                Case case_courante = partie_courante.getPlateau().getCases()[button_pos];
+                button.getStyleClass().add(partie_courante.getPlateau().getClassNameFromCouleur(case_courante.getCouleur()));
+                hint_container.setVisible(false);
+                updateJoueur(dé1,dé2,save_position,dé1.getValeur()+ dé2.getValeur(),joueur);
+                joueur.setProchainePosition(joueur.getPosition());
+                roll_button.setDisable(false);
+            }
+            else
+            {
+                hint_text.setTextFill(Color.RED);
+                hint_text.setText("Wrong case! Click on case N°"+Integer.toString(joueur.getProchainePosition()));
+            }
         }
         else
         {
-            hint_text.setText("Wrong case! Click on case N°"+Integer.toString(joueur.getProchainePosition()));
-        }*/
-
-        if(button_pos != joueur.getPosition())
-        {
-            int prochaine_position = joueur.getProchainePosition();
-            Scene scene = roll_button.getScene();
-            Button button_prochain = (Button) scene.lookup("#case"+Integer.toString(prochaine_position));
-            button_prochain.getStyleClass().clear();
-            Partie partie_courante = MainApplication.jeu.getPartie_courante();
-            Case case_courante = partie_courante.getPlateau().getCases()[prochaine_position];
-            button_prochain.getStyleClass().add(partie_courante.getPlateau().getClassNameFromCouleur(case_courante.getCouleur()));
-            hint_container.setVisible(false);
-            updateJoueur(dé1,dé2,save_position,button_pos-save_position,joueur);
-            roll_button.setDisable(false);
+            if(button_pos != joueur.getPosition())
+            {
+                int prochaine_position = joueur.getProchainePosition();
+                Scene scene = roll_button.getScene();
+                Button button_prochain = (Button) scene.lookup("#case"+Integer.toString(prochaine_position));
+                button_prochain.getStyleClass().clear();
+                Partie partie_courante = MainApplication.jeu.getPartie_courante();
+                Case case_courante = partie_courante.getPlateau().getCases()[prochaine_position];
+                button_prochain.getStyleClass().add(partie_courante.getPlateau().getClassNameFromCouleur(case_courante.getCouleur()));
+                hint_container.setVisible(false);
+                updateJoueur(dé1,dé2,save_position,button_pos-save_position,joueur);
+                roll_button.setDisable(false);
+            }
         }
-
     }
 
     @FXML
@@ -140,6 +146,7 @@ public class GameController {
                         hint_container.setVisible(true);
                         Platform.runLater(
                                 () -> {
+                                    hint_text.setTextFill(Color.RED);
                                     hint_text.setText("Click on the case N°"+Integer.toString(joueur.getProchainePosition()));
                                 }
                         );

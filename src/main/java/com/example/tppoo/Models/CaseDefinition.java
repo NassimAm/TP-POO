@@ -110,12 +110,18 @@ public class CaseDefinition extends CaseQuestion {
         this.definition = definitions.get(rand.nextInt(definitions.size()));
     }
 
-    public void verifierReponse(String reponse,Joueur joueur)
+    public boolean verifierReponse(String reponse,Joueur joueur)
     {
         if(Objects.equals(reponse.toUpperCase(), this.definition.getMot().toUpperCase()))
+        {
             succes(joueur);
+            return true;
+        }
         else
+        {
             echec(joueur);
+            return false;
+        }
     }
 
     protected void succes(Joueur joueur){

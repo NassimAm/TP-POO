@@ -108,12 +108,19 @@ public class CaseImage extends CaseQuestion {
         }
     }
 
-    public void verifierReponse(int index,Joueur joueur)
+    public boolean verifierReponse(int index,Joueur joueur)
     {
         if(Objects.equals(mot, this.images[index].getMot()))
+        {
             succes(joueur);
+            return true;
+        }
         else
+        {
             echec(joueur);
+            return false;
+        }
+
     }
 
     protected void succes(Joueur joueur){
