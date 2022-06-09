@@ -44,6 +44,7 @@ public class Partie implements Serializable {
     public void rechargerPartie(Scene scene)
     {
         Joueur joueur = MainApplication.jeu.getJoueur_courant();
+        int prochaine_position = joueur.getProchainePosition();
         Label player_name = (Label) scene.lookup("#player_name_label");
         player_name.setText(joueur.getNom());
 
@@ -75,7 +76,7 @@ public class Partie implements Serializable {
         joueur.setPosition(joueur_position);
         joueur.setProchainePosition(prochaine_position);
         joueur.setScore(score);
-        this.plateau.chargerPlateauSurScene(joueur_position, scene);
+        this.plateau.chargerPlateauSurScene(joueur_position,prochaine_position, scene);
     }
 
     public int traiterPosition(int joueur_position,Scene scene) throws DestinationException

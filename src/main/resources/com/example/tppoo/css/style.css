@@ -591,3 +591,11 @@
         #e7e7e7,
         radial-gradient(center 50% 50%, radius 40%, #f7f7f7, #e0e0e0);
 }
+
+/*Hightlighted Cases ==========================================================================*/
+/*Case rouge ===================================================*/
+.case-focus{
+    -fx-border-color: white;
+    -fx-border-width: 5px;
+    -fx-border-radius: 8;
+}

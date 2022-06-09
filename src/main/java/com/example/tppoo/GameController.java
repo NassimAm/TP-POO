@@ -1,9 +1,6 @@
 package com.example.tppoo;
 
-import com.example.tppoo.Models.DestinationException;
-import com.example.tppoo.Models.Dé;
-import com.example.tppoo.Models.Joueur;
-import com.example.tppoo.Models.Partie;
+import com.example.tppoo.Models.*;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -51,8 +48,12 @@ public class GameController {
         Dé dé2 = MainApplication.jeu.getPartie_courante().getDé2();
         int save_position = joueur.getPosition();
 
-        if((button_pos == joueur.getProchainePosition())&&(button_pos != joueur.getPosition()))
+        /*if((button_pos == joueur.getProchainePosition())&&(button_pos != joueur.getPosition()))
         {
+            button.getStyleClass().clear();
+            Partie partie_courante = MainApplication.jeu.getPartie_courante();
+            Case case_courante = partie_courante.getPlateau().getCases()[button_pos];
+            button.getStyleClass().add(partie_courante.getPlateau().getClassNameFromCouleur(case_courante.getCouleur()));
             hint_container.setVisible(false);
             updateJoueur(dé1,dé2,save_position,dé1.getValeur()+ dé2.getValeur(),joueur);
             joueur.setProchainePosition(joueur.getPosition());
@@ -61,14 +62,21 @@ public class GameController {
         else
         {
             hint_text.setText("Wrong case! Click on case N°"+Integer.toString(joueur.getProchainePosition()));
-        }
+        }*/
 
-        /*if(button_pos != joueur.getPosition())
+        if(button_pos != joueur.getPosition())
         {
+            int prochaine_position = joueur.getProchainePosition();
+            Scene scene = roll_button.getScene();
+            Button button_prochain = (Button) scene.lookup("#case"+Integer.toString(prochaine_position));
+            button_prochain.getStyleClass().clear();
+            Partie partie_courante = MainApplication.jeu.getPartie_courante();
+            Case case_courante = partie_courante.getPlateau().getCases()[prochaine_position];
+            button_prochain.getStyleClass().add(partie_courante.getPlateau().getClassNameFromCouleur(case_courante.getCouleur()));
             hint_container.setVisible(false);
             updateJoueur(dé1,dé2,save_position,button_pos-save_position,joueur);
             roll_button.setDisable(false);
-        }*/
+        }
 
     }
 
@@ -126,6 +134,9 @@ public class GameController {
                     }
                     else
                     {
+                        Scene scene = roll_button.getScene();
+                        Button button = (Button) scene.lookup("#case"+Integer.toString(joueur.getProchainePosition()));
+                        button.getStyleClass().add("case-focus");
                         hint_container.setVisible(true);
                         Platform.runLater(
                                 () -> {

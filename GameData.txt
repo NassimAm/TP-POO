@@ -1,9 +1,21 @@
 D mouse A little animal that loves cheese
 D horse Very fast, Strong legs, but most importantly a good friend
-D screwdriver A very useful tool that you will need anytime you want to fiw something
+D screwdriver A very useful tool that you will need anytime you want to fix something
 D car An invention made to replace horses in transport
+D software Devices that can be connected to computers
+D browser A program for exploring the Web and viewing websites
+D stallion A fully-grown male horse
+D peak The highest point of a mountain
+D uranium The main resource for nuclear energy
+D football The most popular sport in the world
 I Cat images/cat.jpg
 I Dog images/dog.jpg
 I Dolphin images/dolphin.jpg
 I Eagle images/eagle.jpg
 I Horse images/horse.jpg
+I Beluga images/beluga.jpg
+I Cheetah images/cheetah.jpg
+I Cockatiel images/cockatiel.jpg
+I Lion images/lion.jpeg
+I Parrot images/parrot.jpeg
+I Tiger images/tiger.jpg

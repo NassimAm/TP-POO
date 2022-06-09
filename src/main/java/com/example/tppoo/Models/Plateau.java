@@ -134,10 +134,10 @@ public class Plateau implements Serializable {
 
         cases[nbCases-1] = new CaseFin(nbCases-1);
 
-        chargerPlateauSurScene(0,scene);
+        chargerPlateauSurScene(0,0,scene);
     }
 
-    public void chargerPlateauSurScene(int position_joueur,Scene scene)
+    public void chargerPlateauSurScene(int position_joueur,int prochaine_position,Scene scene)
     {
         //Generer son interface ==================================================
         for(int i=0;i<this.nbCases;i++)
@@ -146,6 +146,11 @@ public class Plateau implements Serializable {
             //System.out.println(plateau.cases[i].getCouleur());
             button.getStyleClass().clear();
             button.getStyleClass().add(getClassNameFromCouleur(this.cases[i].getCouleur()));
+            if((i == prochaine_position) && (position_joueur != prochaine_position))
+            {
+                button.getStyleClass().add("case-focus");
+            }
+
             if(i == position_joueur)
                 button.setGraphic(generateJoueurImage());
 
@@ -238,7 +243,7 @@ public class Plateau implements Serializable {
 
         this.cases[4] = new CaseFin(4);
 
-        chargerPlateauSurScene(0,scene);
+        chargerPlateauSurScene(0,0,scene);
     }
 
     public Case[] getCases() {
